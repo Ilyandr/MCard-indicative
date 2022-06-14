@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/main_linear">
+
+    <LinearLayout
+        android:id="@+id/bar_icon"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="8">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/back_icon"
+            android:background="@color/prism"
+            android:layout_gravity="center"
+            android:id="@+id/btn_back"
+            tools:ignore="NestedWeights,RtlHardcoded,RtlSymmetry" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:fontFamily="@font/bandera_middle_font"
+            android:id="@+id/name_fragment"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/prism"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:layout_marginLeft="10sp"
+        android:orientation="horizontal"
+        tools:ignore="DisableBaselineAlignment,RtlHardcoded">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="8sp"
+            tools:ignore="NestedWeights">
+
+            <ProgressBar
+                android:id="@+id/loading"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:indeterminateDrawable="@drawable/loading_anim" />
+
+            <view
+                android:id="@+id/user_photo"
+                class="com.example.mcard.FragmentsAdditionally.GlobalProfileUserFragment$UserIconLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="0.5">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/user_id"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10sp"
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="20sp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/bandera_small_font"
+                android:maxLines="1"
+                android:textColorHint="@color/white"
+                android:layout_weight="1"
+                android:background="@drawable/text_icon"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/users_count"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10sp"
+                android:layout_height="0dp"
+                android:layout_marginTop="15sp"
+                app:fontFamily="@font/bandera_small_font"
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="20sp"
+                android:layout_gravity="center"
+                android:maxLines="1"
+                android:textColorHint="@color/white"
+                android:layout_weight="1"
+                android:background="@drawable/text_icon"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="40sp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="75sp"
+        android:layout_marginEnd="75sp"
+        android:layout_weight="42"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="6sp"
+            android:layout_weight="1"
+            tools:ignore="NestedWeights">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/offer_subscribe"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/main_select_btn"
+                android:gravity="center"
+                android:text="Подписаться"
+                android:textColor="@color/basic_app_color"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText,NestedWeights,RtlSymmetry" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:backgroundTint="@color/prism"
+                android:src="@drawable/global_subscribe"
+                android:tint="@color/basic_app_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="6sp"
+            android:layout_weight="1"
+            tools:ignore="NestedWeights">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/send_message"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/main_select_btn"
+                android:gravity="center"
+                android:text="Запрос карты"
+                android:textColor="@color/basic_app_color"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText,NestedWeights,RtlSymmetry" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:backgroundTint="@color/prism"
+                android:src="@drawable/send_card"
+                android:tint="@color/basic_app_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="6sp"
+            android:layout_weight="1"
+            tools:ignore="NestedWeights">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/list_friends"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/main_select_btn"
+                android:gravity="center"
+                android:text="Список подписок"
+                android:textColor="@color/basic_app_color"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText,NestedWeights,RtlSymmetry" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:backgroundTint="@color/prism"
+                android:src="@drawable/global_listfriends"
+                android:tint="@color/basic_app_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="6sp"
+            android:layout_weight="1"
+            tools:ignore="NestedWeights">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/list_publicCards"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/main_select_btn"
+                android:gravity="center"
+                android:text="Глобальные карты"
+                android:textColor="@color/basic_app_color"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText,NestedWeights,RtlSymmetry" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:backgroundTint="@color/prism"
+                android:src="@drawable/global_cardlist"
+                android:tint="@color/basic_app_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="6sp"
+            android:layout_weight="1"
+            tools:ignore="NestedWeights">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/add_blackList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/main_select_btn"
+                android:gravity="center"
+                android:text="Заблокировать"
+                android:textColor="@color/basic_app_color"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText,NestedWeights,RtlSymmetry" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:backgroundTint="@color/prism"
+                android:src="@drawable/global_add_blacklist"
+                android:tint="@color/basic_app_color" />
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/user_dataRegister"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:fontFamily="@font/bandera_middle_font"
+            android:textSize="15sp"
+            android:textColor="@color/color_id"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="25"/>
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main_linear2">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+    </View>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="@drawable/prism_icon_app"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:layout_marginTop="20sp"
+            android:fontFamily="@font/bandera_middle_font"
+            android:id="@+id/hello_text"
+            android:textColor="@color/white"
+            android:background="@color/prism"
+            android:gravity="center|top"
+            android:layout_gravity="center"
+            android:textSize="20sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:ignore="NestedWeights" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="30sp"
+            android:id="@+id/loading"
+            android:layout_height="30sp"
+            android:textColor="@color/white"
+            android:background="@drawable/loading_start_app"
+            android:gravity="center"
+            android:layout_gravity="center|top"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/loadingText"
+        android:text="@string/loadingInfo"
+        android:gravity="center|bottom"
+        android:padding="10sp"
+        android:fontFamily="@font/bandera_small_font"
+        android:textColor="@color/basic_app_color"
+        android:textSize="14sp"
+        android:layout_weight="1"/>
+</LinearLayout>

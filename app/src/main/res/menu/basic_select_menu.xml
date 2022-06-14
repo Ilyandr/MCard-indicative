@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/geoSort"
+        android:checkable="true"
+        android:title="@string/menuSortInfo1" />
+    <item
+        android:id="@+id/countSort"
+        android:checkable="true"
+        android:title="@string/menuSortInfo2"
+        android:enabled="true"/>
+    <item
+        android:id="@+id/ABCSort"
+        android:checkable="true"
+        android:title="@string/menuSortInfo3"/>
+    <item
+        android:id="@+id/dateSort"
+        android:checkable="true"
+        android:title="@string/menuSortInfo4"/>
+</menu>

@@ -1,0 +1,149 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_linear"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/bar_icon"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="center">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/back_icon"
+            android:background="@color/prism"
+            android:layout_gravity="center"
+            android:id="@+id/btn_back"
+            tools:ignore="NestedWeights,RtlHardcoded,RtlSymmetry" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:fontFamily="@font/bandera_middle_font"
+            android:id="@+id/name_fragment"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingRight="15dp"
+            android:id="@+id/time_fire_btn"
+            android:background="@color/prism"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+    </LinearLayout>
+
+
+    <com.example.mcard.GeneralInterfaceApp.CustomAppViews.CustomHeaderListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:divider="@null"
+        android:layout_weight="12"
+        android:id="@+id/listview_friends"
+        android:orientation="vertical">
+    </com.example.mcard.GeneralInterfaceApp.CustomAppViews.CustomHeaderListView>
+
+
+    <LinearLayout
+        android:id="@+id/bottomPanel"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/bottom_radius_bar"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            tools:ignore="NestedWeights" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="match_parent"
+            android:gravity="bottom"
+            android:scaleY="1.5"
+            android:scaleX="1.5"
+            tools:ignore="RtlHardcoded,RtlSymmetry"
+            android:layout_gravity="center"
+            android:src="@drawable/global_listfriends"
+            android:background="@color/prism"
+            android:layout_height="0dp"
+            android:id="@+id/my_subscribe"
+            android:layout_weight="3" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/my_subscribe_text"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="9sp"
+                android:textColor="@color/main_color"
+                android:layout_marginBottom="5sp"
+                android:gravity="center"
+                android:fontFamily="@font/bandera_small_font"
+                android:text="@string/infoFriends"
+                tools:ignore="SmallSp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:background="@color/prism"
+            android:layout_height="match_parent"
+            android:layout_weight="4"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="match_parent"
+                android:gravity="bottom"
+                android:scaleY="1.5"
+                android:scaleX="1.5"
+                android:src="@drawable/global_subscribe"
+                tools:ignore="RtlHardcoded,RtlSymmetry"
+                android:layout_gravity="center"
+                android:background="@color/prism"
+                android:layout_height="0dp"
+                android:id="@+id/my_subscribers"
+                android:layout_weight="3"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="9sp"
+                android:textStyle="bold"
+                android:textColor="@color/main_color"
+                android:layout_marginBottom="5sp"
+                android:id="@+id/my_subscribers_text"
+                android:gravity="center"
+                android:fontFamily="@font/bandera_small_font"
+                android:text="@string/infoSubscribe"
+                tools:ignore="SmallSp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main_linear_reception">
+
+  <LinearLayout
+      android:id="@+id/bar_icon"
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      android:layout_gravity="center">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:src="@drawable/back_icon"
+        android:background="@color/prism"
+        android:layout_gravity="center"
+        android:id="@+id/btn_back"
+        tools:ignore="NestedWeights,RtlHardcoded,RtlSymmetry" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:fontFamily="@font/bandera_middle_font"
+        android:id="@+id/name_fragment"
+        tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/prism"
+        tools:ignore="RtlHardcoded,RtlSymmetry" />
+  </LinearLayout>
+
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="0.5"/>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_gravity="center"
+      android:layout_weight="4"
+      android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:ignore="NestedWeights" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/prism_icon_app"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+  </LinearLayout>
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="5.5"
+      android:layout_marginStart="75sp"
+      android:layout_marginEnd="75sp"
+      android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="6sp"
+        android:layout_weight="2"
+        tools:ignore="NestedWeights">
+
+      <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/data_last_change"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@drawable/main_select_btn"
+          android:gravity="center"
+          android:textColor="@color/basic_app_color"
+          android:textSize="14sp"
+          tools:ignore="HardcodedText,NestedWeights,RtlSymmetry" />
+
+      <androidx.appcompat.widget.AppCompatImageButton
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentStart="true"
+          android:layout_alignParentTop="true"
+          android:layout_alignParentBottom="true"
+          android:backgroundTint="@color/prism"
+          android:tint="@color/basic_app_color" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="6sp"
+        android:layout_weight="2"
+        tools:ignore="NestedWeights">
+
+      <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/score_change"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@drawable/main_select_btn"
+          android:gravity="center"
+          android:textColor="@color/basic_app_color"
+          android:textSize="14sp"
+          tools:ignore="HardcodedText,NestedWeights,RtlSymmetry" />
+
+      <androidx.appcompat.widget.AppCompatImageButton
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentStart="true"
+          android:layout_alignParentTop="true"
+          android:layout_alignParentBottom="true"
+          android:backgroundTint="@color/prism"
+          android:tint="@color/basic_app_color" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="6sp"
+        android:layout_weight="2">
+
+      <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/informerView"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="4"
+          android:background="@drawable/main_select_btn"
+          android:text="Авто синхронизация:"
+          android:textColor="@color/basic_app_color"
+          android:gravity="center"
+          android:textSize="14sp"
+          tools:ignore="HardcodedText" />
+
+      <androidx.appcompat.widget.SwitchCompat
+          android:id="@+id/sync_switch"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:layout_gravity="center"
+          android:checked="false" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="6sp"
+        android:layout_weight="2"
+        tools:ignore="NestedWeights">
+
+      <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/sync_now"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@drawable/main_select_btn"
+          android:gravity="center"
+          android:text="Синхронизировать"
+          android:textColor="@color/basic_app_color"
+          android:textSize="14sp"
+          tools:ignore="HardcodedText,NestedWeights,RtlSymmetry" />
+
+      <androidx.appcompat.widget.AppCompatImageButton
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentStart="true"
+          android:layout_alignParentTop="true"
+          android:layout_alignParentBottom="true"
+          android:backgroundTint="@color/prism"
+          android:src="@drawable/ic_refresh_data_icon"
+          android:tint="@color/basic_app_color" />
+    </RelativeLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_marginTop="30sp"
+        android:hint="@string/btnCompleteHint"
+        android:textColorHint="@color/basic_app_color"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:id="@+id/btn_complete"
+        android:layout_marginBottom="4sp"
+        android:typeface="monospace"
+        android:background="@drawable/complete_btn" />
+  </LinearLayout>
+
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="2"/>
+</LinearLayout>

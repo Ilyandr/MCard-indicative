@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main_linear_reception"
+    android:background="@drawable/list_black">
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/prism_icon_app"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginRight="50sp"
+            android:layout_marginBottom="6sp"
+            android:layout_marginLeft="50sp"
+            android:layout_weight="1"
+            tools:ignore="NestedWeights">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_white"
+                android:fontFamily="@font/bandera_small_font"
+                android:hint="Логин (Email)"
+                android:maxLines="1"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/basic_app_color"
+                android:textColorHint="@color/basic_app_color"
+                android:textSize="13sp"
+                tools:ignore="HardcodedText,NestedWeights,RtlSymmetry" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:backgroundTint="@color/prism"
+                android:src="@drawable/login_icon"
+                android:tint="@color/basic_app_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginRight="50sp"
+            android:layout_marginLeft="50sp"
+            android:layout_weight="1">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_white"
+                android:fontFamily="@font/bandera_small_font"
+                android:hint="Пароль"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp"
+                android:maxLines="1"
+                android:paddingRight="10dp"
+                android:textColor="@color/basic_app_color"
+                android:textColorHint="@color/basic_app_color"
+                android:textSize="13sp"
+                tools:ignore="HardcodedText,RtlSymmetry" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/btnLookPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:backgroundTint="@color/prism"
+                android:src="@drawable/look_icon"
+                android:tint="@color/basic_app_color" />
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="75sp"
+            android:layout_marginLeft="75sp"
+            android:id="@+id/btn_startApp"
+            android:textColorHint="@color/basic_app_color"
+            android:textSize="14sp"
+            android:fontFamily="@font/bandera_small_font"
+            android:textStyle="bold"
+            android:background="@drawable/complete_btn"
+            android:hint="Войти"
+            tools:ignore="HardcodedText,SmallSp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/restoreAccount"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="2sp"
+            android:background="@color/prism"
+            android:textSize="14sp"
+            android:textColorHint="@color/main_color"
+            android:fontFamily="@font/bandera_small_font"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:hint="@string/ResetAccount"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnOfflineEntrance"
+            android:hint="@string/infoBtnReceptionOffline"
+            android:background="@color/prism"
+            android:layout_marginRight="100sp"
+            android:layout_marginLeft="100sp"
+            android:gravity="center|top"
+            android:textSize="14sp"
+            android:drawableBottom="@drawable/exit_account_icon"
+            android:layout_gravity="center"
+            android:fontFamily="@font/bandera_small_font"
+            android:textColorHint="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            tools:ignore="NestedWeights" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_weight="0.5">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/prism"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:fontFamily="@font/bandera_middle_font"
+            android:textColorHint="@color/white"
+            android:layout_marginBottom="2sp"
+            android:layout_gravity="center"
+            android:gravity="bottom|center"
+            android:hint="@string/NoAccInfo"
+            tools:ignore="NestedWeights" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:id="@+id/btn_register"
+            android:layout_gravity="center"
+            android:gravity="center|top"
+            android:fontFamily="@font/bandera_small_font"
+            android:textColorHint="@color/main_color"
+            android:hint="@string/Register"
+            android:background="@color/prism" />
+    </LinearLayout>
+</LinearLayout>

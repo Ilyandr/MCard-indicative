@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main_linear"
+    android:background="@drawable/list_black">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/prism_icon_app"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="6sp"
+            android:fontFamily="@font/bandera_small_font"
+            android:layout_marginRight="50sp"
+            android:layout_marginLeft="50sp"
+            android:layout_weight="1"
+            android:id="@+id/inputAccountName"
+            android:paddingRight="10dp"
+            android:maxLines="1"
+            android:maxLength="20"
+            android:paddingLeft="10dp"
+            android:background="@drawable/btn_white"
+            android:textColorHint="@color/basic_app_color"
+            android:textColor="@color/basic_app_color"
+            android:hint="ID аккаунта"
+            android:textSize="13sp"
+            tools:ignore="HardcodedText,NestedWeights,RtlSymmetry" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="6sp"
+            android:layout_marginRight="50sp"
+            android:layout_marginLeft="50sp"
+            android:layout_weight="1"
+            android:paddingRight="10dp"
+            android:fontFamily="@font/bandera_small_font"
+            android:paddingLeft="10dp"
+            android:id="@+id/inputLogin"
+            android:maxLines="1"
+            android:background="@drawable/btn_white"
+            android:textColorHint="@color/basic_app_color"
+            android:textColor="@color/basic_app_color"
+            android:hint="Логин (Email)"
+            android:textSize="13sp"
+            tools:ignore="HardcodedText,NestedWeights,RtlSymmetry" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="75sp"
+            android:layout_marginLeft="75sp"
+            android:id="@+id/btnComplete"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:background="@drawable/complete_btn"
+            android:hint="Подтвердить"
+            android:fontFamily="@font/bandera_small_font"
+            android:textColorHint="@color/basic_app_color"
+            android:gravity="center"
+            tools:ignore="HardcodedText,SmallSp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+</LinearLayout>

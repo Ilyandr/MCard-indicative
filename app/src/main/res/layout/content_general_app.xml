@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/main_linear"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/control_panel"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/menu"
+            android:src="@drawable/menu_icon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/prism"
+            tools:ignore="NestedWeights,RtlSymmetry" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:fontFamily="@font/bandera_middle_font"
+            android:id="@+id/main_text"
+            tools:ignore="RtlSymmetry" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_geolocation"
+            android:src="@drawable/geolocation_icon"
+            android:layout_width="0dp"
+            android:background="@color/prism"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            tools:ignore="RtlSymmetry" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/help"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+
+        <ListView
+            android:id="@+id/drawable"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeGeneralView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20sp">
+
+            <com.example.mcard.GeneralInterfaceApp.CustomAppViews.CustomHeaderListView
+                android:id="@+id/list_item"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:scaleX="0" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/add"
+            android:src="@drawable/add_card_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="18sp"
+            android:layout_marginTop="18sp"
+            android:layout_marginEnd="18sp"
+            android:layout_marginBottom="18sp"
+            android:background="@color/prism"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+    </RelativeLayout>
+</LinearLayout>

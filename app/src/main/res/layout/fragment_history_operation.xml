@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainLinearLayout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/bar_icon"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="center">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/back_icon"
+            android:background="@color/prism"
+            android:layout_gravity="center"
+            android:id="@+id/btn_back"
+            tools:ignore="NestedWeights,RtlHardcoded,RtlSymmetry" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:fontFamily="@font/bandera_middle_font"
+            android:id="@+id/name_fragment"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/time_fire_btn"
+            android:background="@color/prism"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+    </LinearLayout>
+
+<com.example.mcard.GeneralInterfaceApp.CustomAppViews.CustomHeaderListView
+    android:layout_width="match_parent"
+    android:divider="@null"
+    android:layout_marginTop="20sp"
+    android:layout_height="0dp"
+    android:layout_weight="12"
+    android:id="@+id/listview_history"
+    android:orientation="vertical">
+</com.example.mcard.GeneralInterfaceApp.CustomAppViews.CustomHeaderListView>
+</LinearLayout>

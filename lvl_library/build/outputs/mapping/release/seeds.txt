@@ -1,0 +1,3 @@
+com.android.vending.licensing.ILicensingService
+com.google.android.vending.licensing.R
+com.google.android.vending.licensing.R: R()

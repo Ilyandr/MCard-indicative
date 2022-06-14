@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/prism"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:background="@color/prism"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:layout_marginRight="30sp"
+        android:layout_marginLeft="30sp"
+        android:background="@drawable/main_select_btn"
+        android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textColor="@color/main_color"
+        android:gravity="center"
+        android:paddingStart="10sp"
+        android:typeface="monospace"
+        android:textSize="14sp"
+        android:maxLines="3"
+        android:textStyle="bold"
+        android:id="@+id/shop_name_TV"
+        tools:ignore="NestedWeights,RtlSymmetry" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.2"
+        android:typeface="monospace"
+        android:textColor="@color/main_color"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:maxLines="3"
+        android:paddingStart="10sp"
+        android:paddingBottom="4sp"
+        android:id="@+id/shop_address_TV"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textColor="@color/main_color"
+        android:gravity="center"
+        android:typeface="monospace"
+        android:paddingEnd="10sp"
+        android:maxLines="3"
+        android:paddingStart="10sp"
+        android:textSize="14sp"
+        android:id="@+id/time_add_TV"/>
+    </LinearLayout>
+</LinearLayout>

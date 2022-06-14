@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main_linear_reception">
+
+    <LinearLayout
+        android:id="@+id/bar_icon"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="center">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/back_icon"
+            android:background="@color/prism"
+            android:layout_gravity="center"
+            android:id="@+id/btn_back"
+            tools:ignore="NestedWeights,RtlHardcoded,RtlSymmetry" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:fontFamily="@font/bandera_middle_font"
+            android:id="@+id/name_fragment"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/time_fire_btn"
+            android:background="@color/prism"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:ignore="NestedWeights" />
+
+            <com.example.mcard.GeneralInterfaceApp.CustomAppViews.RoundRectCornerImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center|top"
+                android:layout_margin="10sp"
+                android:id="@+id/user_photo" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/user_info"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="15sp"
+            android:layout_marginBottom="30sp"
+            android:hint="@string/userString"
+            android:layout_gravity="center|top"
+            android:fontFamily="@font/bandera_middle_font"
+            android:maxLines="1"
+            android:maxLength="40"
+            android:textColorHint="@color/white"
+            android:layout_weight="1"
+            android:background="@drawable/text_icon"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            tools:ignore="NestedWeights" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="75sp"
+            android:layout_marginRight="75sp"
+            android:layout_marginBottom="6sp"
+            android:layout_weight="1"
+            tools:ignore="NestedWeights">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/change_photo_profile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/main_select_btn"
+                android:gravity="center"
+                android:text="Изображение"
+                android:textColor="@color/basic_app_color"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText,NestedWeights,RtlSymmetry" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:backgroundTint="@color/prism"
+                android:src="@drawable/camera_icon"
+                android:tint="@color/basic_app_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="75sp"
+            android:layout_marginRight="75sp"
+            android:layout_marginBottom="6sp"
+            android:layout_weight="1"
+            tools:ignore="NestedWeights">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/user_name_change"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/main_select_btn"
+                android:gravity="center"
+                android:text="Имя профиля"
+                android:textColor="@color/basic_app_color"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText,NestedWeights,RtlSymmetry" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:backgroundTint="@color/prism"
+                android:src="@drawable/global_singlecard_profile"
+                android:tint="@color/basic_app_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="75sp"
+            android:layout_marginRight="75sp"
+            android:layout_marginBottom="6sp"
+            android:layout_weight="1"
+            tools:ignore="NestedWeights">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/app_info"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/main_select_btn"
+                android:gravity="center"
+                android:text="О приложении"
+                android:textColor="@color/basic_app_color"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText,NestedWeights,RtlSymmetry" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:backgroundTint="@color/prism"
+                android:src="@drawable/design_info_small"
+                android:tint="@color/basic_app_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="75sp"
+            android:layout_marginRight="75sp"
+            android:layout_marginBottom="6sp"
+            android:layout_weight="1"
+            tools:ignore="NestedWeights">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/remove_account"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/main_select_btn"
+                android:gravity="center"
+                android:text="Удалить аккаунт"
+                android:textColor="@color/basic_app_color"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText,NestedWeights,RtlSymmetry" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:backgroundTint="@color/prism"
+                android:src="@drawable/design_remove_icon"
+                android:tint="@color/basic_app_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="75sp"
+            android:layout_marginRight="75sp"
+            android:layout_marginTop="24sp"
+            android:layout_weight="1"
+            tools:ignore="NestedWeights">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/exit_account"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/complete_btn"
+                android:gravity="center"
+                android:text="Выход"
+                android:textColor="@color/basic_app_color"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText,NestedWeights,RtlSymmetry" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:backgroundTint="@color/prism"
+                android:src="@drawable/exit_account_icon"
+                android:tint="@color/basic_app_color" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/user_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|top"
+            android:paddingTop="12dp"
+            android:fontFamily="@font/bandera_middle_font"
+            android:textSize="15sp"
+            android:textColor="@color/color_id"/>
+    </LinearLayout>
+</LinearLayout>

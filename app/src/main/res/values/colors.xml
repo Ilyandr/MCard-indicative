@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#808080</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="prism">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="colorSheetLabel">#24988D</color>
+    <color name="colorSheetInfo">#7B7B7B</color>
+    <color name="colorSheetSeparator">#DADADA</color>
+    <color name="basic_app_color">#00b3b3</color>
+    <color name="theme_reception">#172884</color>
+    <color name="main_color">#00b3b3</color>
+    <color name="text_color_1">#B0000000</color>
+    <color name="color_id">#FFFFFF</color>
+    <color name="btn_off">#E4B6B6B6</color>
+    <color name="shadow_card">#17393939</color>
+
+    <color name="green">#1A7500</color>
+    <color name="yellow">#B1B800</color>
+    <color name="red">#950000</color>
+</resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient_dialog_preloader"
+    android:id="@+id/gradientPreloaderView"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/primaryText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10sp"
+        android:layout_weight="1"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:id="@+id/mainLinearLayout"
+        android:layout_weight="3"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingLeft="15sp"
+        android:paddingRight="15sp"
+        android:layout_margin="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/generalMessageTV"
+            android:textSize="15sp"
+            android:typeface="serif"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnLinearLayout"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_margin="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnNegative"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|bottom"
+            android:background="@color/prism"
+            android:textColorHint="@color/white"
+            tools:ignore="NestedWeights,RtlHardcoded,RtlSymmetry" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAdditionaly"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textColorHint="@color/white"
+            android:layout_weight="1"
+            android:gravity="center|bottom"
+            android:background="@color/prism"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnPositive"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="top"
+            android:gravity="center|bottom"
+            android:textColorHint="@color/white"
+            android:background="@color/prism"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+    </LinearLayout>
+</LinearLayout>

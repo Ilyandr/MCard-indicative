@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/prism"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:background="@color/prism"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:baselineAligned="false"
+        android:layout_marginRight="15sp"
+        android:layout_marginLeft="15sp"
+        android:background="@drawable/user_find"
+        android:orientation="horizontal">
+
+         <RelativeLayout
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="0.5"
+             android:layout_margin="5sp"
+             tools:ignore="NestedWeights">
+
+             <view class="com.example.mcard.FragmentsAdditionally.GlobalProfileUserFragment$UserIconLayout"
+                 android:id="@+id/user_icon"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:scaleType="centerCrop"
+                 android:background="@color/prism"
+                 tools:ignore="ContentDescription" />
+
+             <ProgressBar
+                 android:id="@+id/loading"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:layout_alignParentStart="true"
+                 android:layout_alignParentTop="true"
+                 android:layout_alignParentEnd="true"
+                 android:layout_alignParentBottom="true"
+                 android:layout_marginStart="8sp"
+                 android:layout_marginTop="8sp"
+                 android:layout_marginEnd="8sp"
+                 android:layout_marginBottom="8sp"
+                 android:indeterminateDrawable="@drawable/loading_anim" />
+         </RelativeLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/main_color"
+            android:gravity="left|center"
+            android:textSize="14sp"
+            android:paddingStart="10sp"
+            android:id="@+id/user_id"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_margin="5sp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+        </View>
+    </LinearLayout>
+</LinearLayout>

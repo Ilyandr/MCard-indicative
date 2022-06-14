@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_linear_reception"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/bar_icon"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="center">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/back_icon"
+            android:background="@color/prism"
+            android:layout_gravity="center"
+            android:id="@+id/btn_back"
+            tools:ignore="NestedWeights,RtlHardcoded,RtlSymmetry" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:fontFamily="@font/bandera_middle_font"
+            android:id="@+id/name_fragment"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/changeHistoryBtn"
+            android:layout_width="0dp"
+            android:src="@drawable/change_history_btn"
+            android:tint="@color/basic_app_color"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/prism"
+            tools:ignore="RtlSymmetry" />
+    </LinearLayout>
+
+    <com.example.mcard.GeneralInterfaceApp.CustomAppViews.CustomRealtiveLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:id="@+id/cardSize"
+        android:layout_gravity="center"
+        android:background="@color/prism"
+        android:padding="6sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginEnd="20sp"
+        android:layout_marginStart="20sp">
+
+        <com.example.mcard.GeneralInterfaceApp.CustomAppViews.RoundRectCornerImageView
+            android:id="@+id/color_card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/prism"
+            android:scaleType="fitXY" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/name_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="top"
+            android:layout_marginStart="25sp"
+            android:maxLines="1"
+            android:maxLength="30"
+            android:layout_marginTop="25sp"
+            android:layout_marginEnd="25sp"
+            android:layout_marginBottom="25sp"
+            android:background="@android:color/transparent"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:layout_marginRight="20sp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20sp"
+            android:layout_marginBottom="70sp"
+            android:id="@+id/surfaceForm"
+            android:background="@color/prism">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/roundSurfaceView"
+                app:cardCornerRadius="8dp">
+
+            <SurfaceView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/prism"
+                android:scaleY="5"
+                android:scaleX="1"
+                android:id="@+id/cameraEdit_barcode"/>
+
+                <com.example.mcard.RecognitionsFromCard.GraphicRecognitions.GraphicOverlay
+                    android:id="@+id/graphicOverlay"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <com.example.mcard.GeneralInterfaceApp.CustomAppViews.RoundRectCornerImageView
+                    android:id="@+id/barcode_card"
+                    android:background="@color/white"
+                    android:scaleType="centerInside"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnControlFlashMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="10sp"
+                android:drawableRight="@drawable/icon_flashmode_button_off"
+                android:background="@color/prism"
+                android:paddingRight="10dp"
+                android:scaleX="0"
+                android:paddingBottom="10dp"
+                tools:ignore="RelativeOverlap,RtlHardcoded,RtlSymmetry" />
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/number_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="25sp"
+            android:layout_marginTop="25sp"
+            android:layout_marginEnd="25sp"
+            android:maxLines="1"
+            android:maxLength="25"
+            android:layout_marginBottom="15sp"
+            android:background="@android:color/transparent"
+            android:textColor="#fff"
+            android:textSize="19sp" />
+    </com.example.mcard.GeneralInterfaceApp.CustomAppViews.CustomRealtiveLayout>
+
+    <View
+        android:id="@+id/clearView"
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:layout_margin="20dp"
+        android:background="@drawable/line_blur"
+        tools:ignore="SmallSp" />
+
+    <LinearLayout
+        android:id="@+id/layoutAllBtn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="11"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginRight="75sp"
+            android:layout_marginLeft="75sp"
+            android:layout_marginBottom="6sp"
+            android:layout_weight="3"
+            tools:ignore="NestedWeights">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/edit_text_card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/main_select_btn"
+                android:gravity="center"
+                android:text="Редактирование"
+                android:textColor="@color/basic_app_color"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText,NestedWeights,RtlSymmetry" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:backgroundTint="@color/prism"
+                android:src="@drawable/edit_text_size"
+                android:tint="@color/basic_app_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginRight="75sp"
+            android:layout_marginLeft="75sp"
+            android:layout_marginBottom="6sp"
+            android:layout_weight="3"
+            tools:ignore="NestedWeights">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/btn_startEditColor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/main_select_btn"
+                android:gravity="center"
+                android:text="Цвет"
+                android:textColor="@color/basic_app_color"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText,NestedWeights,RtlSymmetry" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:backgroundTint="@color/prism"
+                android:src="@drawable/edit_text_icon"
+                android:tint="@color/basic_app_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginRight="75sp"
+            android:layout_marginLeft="75sp"
+            android:layout_marginBottom="6sp"
+            android:layout_weight="3"
+            tools:ignore="NestedWeights">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/btn_editBarcode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/main_select_btn"
+                android:gravity="center"
+                android:text="Штрих-код"
+                android:textColor="@color/basic_app_color"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText,NestedWeights,RtlSymmetry" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:backgroundTint="@color/prism"
+                android:src="@drawable/qr_code_icon"
+                android:tint="@color/basic_app_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginRight="75sp"
+            android:layout_marginLeft="75sp"
+            android:layout_marginBottom="6sp"
+            android:layout_weight="3"
+            tools:ignore="NestedWeights">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/btn_customDesign"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/main_select_btn"
+                android:gravity="center"
+                android:text="Мой дизайн"
+                android:textColor="@color/basic_app_color"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText,NestedWeights,RtlSymmetry" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:backgroundTint="@color/prism"
+                android:src="@drawable/personal_design_icon"
+                android:tint="@color/basic_app_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginRight="75sp"
+            android:layout_marginLeft="75sp"
+            android:layout_marginBottom="6sp"
+            android:layout_weight="3"
+            tools:ignore="NestedWeights">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/push_card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/main_select_btn"
+                android:gravity="center"
+                android:text="Поделиться"
+                android:textColor="@color/basic_app_color"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText,NestedWeights,RtlSymmetry" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:backgroundTint="@color/prism"
+                android:src="@drawable/send_card"
+                android:tint="@color/basic_app_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginRight="75sp"
+            android:layout_marginLeft="75sp"
+            android:layout_marginBottom="6sp"
+            android:layout_weight="3"
+            tools:ignore="NestedWeights">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/btn_deleteCard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/main_select_btn"
+                android:gravity="center"
+                android:text="Удалить"
+                android:textColor="@color/basic_app_color"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText,NestedWeights,RtlSymmetry" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:backgroundTint="@color/prism"
+                android:src="@drawable/design_remove_icon"
+                android:tint="@color/basic_app_color" />
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="75sp"
+            android:layout_marginLeft="75sp"
+            android:id="@+id/editOkay"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:background="@drawable/complete_btn"
+            android:hint="Готово"
+            android:textColorHint="@color/basic_app_color"
+            android:gravity="center"
+            android:typeface="monospace"
+            tools:ignore="HardcodedText" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/prism"
+            android:layout_weight="2"/>
+    </LinearLayout>
+</LinearLayout>

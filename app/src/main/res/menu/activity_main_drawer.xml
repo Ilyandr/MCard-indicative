@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:id="@+id/auto">
+        <item
+            android:id="@+id/btnLocaleProfile"
+            android:icon="@drawable/design_menu_profile"
+            android:title="@string/left_menu_user_profile" />
+        <item
+            android:id="@+id/btnHistoryUsing"
+            android:icon="@drawable/change_history_btn"
+            android:title="@string/left_menu_history_operation" />
+        <item
+
+            android:id="@+id/btnSettings"
+            android:icon="@drawable/design_menu_settings"
+            android:title="@string/left_menu_settings" />
+        <item
+            android:id="@+id/btnSync"
+            android:icon="@drawable/design_menu_sync"
+            android:title="@string/left_menu_sync" />
+        <item
+            android:id="@+id/btnSubscribe"
+            android:icon="@drawable/design_menu_friends"
+            android:title="@string/left_menu_list_friends" />
+        <item
+            android:id="@+id/btnGlobalPlatform"
+            android:icon="@drawable/design_menu_global_platform"
+            android:title="@string/left_menu_global_info" />
+        <item
+            android:id="@+id/btnPaymentAction"
+            android:icon="@drawable/design_menu_payment"
+            android:title="@string/left_menu_subscribe" />
+    </group>
+</menu>

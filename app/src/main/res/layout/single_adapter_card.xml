@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.mcard.GeneralInterfaceApp.CustomAppViews.CustomRealtiveLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="6dp"
+    android:layout_gravity="bottom"
+    android:background="@color/prism"
+    android:id="@+id/relativeContainer"
+    android:orientation="vertical">
+
+    <com.example.mcard.GeneralInterfaceApp.CustomAppViews.RoundRectCornerImageView
+        android:id="@+id/cardDesign"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@color/prism"
+        android:scaleType="fitXY" />
+
+<RelativeLayout
+        android:id="@+id/setRadiusView"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        app:cardBackgroundColor="@color/prism"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        app:cardCornerRadius="30dp"
+        android:layout_margin="5sp"
+        tools:ignore="RtlHardcoded">
+
+        <ProgressBar
+            android:id="@+id/loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:indeterminateDrawable="@drawable/loading_primary_anim" />
+
+    <view
+        android:id="@+id/globalImage"
+        class="com.example.mcard.FragmentsAdditionally.GlobalProfileUserFragment$UserIconLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/prism"
+        android:scaleType="centerCrop"
+        tools:ignore="ContentDescription" />
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/name_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25sp"
+        android:layout_marginTop="25sp"
+        android:layout_marginEnd="25sp"
+        android:layout_marginBottom="25sp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/bandera_small_font"
+        android:textColor="#fff" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/number_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="25sp"
+        android:layout_marginTop="25sp"
+        android:layout_marginEnd="25sp"
+        android:layout_marginBottom="15sp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/bandera_small_font"
+        android:textColor="#fff" />
+    </com.example.mcard.GeneralInterfaceApp.CustomAppViews.CustomRealtiveLayout>

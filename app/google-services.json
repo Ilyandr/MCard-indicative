@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "243838168217",
+    "firebase_url": "https://mcarddb-3d9fd-default-rtdb.firebaseio.com",
+    "project_id": "mcarddb-3d9fd",
+    "storage_bucket": "mcarddb-3d9fd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:243838168217:android:f97810bc808c6f502cdc08",
+        "android_client_info": {
+          "package_name": "gcu.production.mcard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "243838168217-8a84rccmmk1mtc0hufsmgds57vropvar.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "gcu.production.mcard",
+            "certificate_hash": "d278c132251a06c8fa4dfd78f7d0b4532ce424f5"
+          }
+        },
+        {
+          "client_id": "243838168217-mp7rqgj3mf2841h48rj30dsa9u4bd8lp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGRL8X7_DJ32kPo8lXZyF2C9LKmvnKPnY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "243838168217-mp7rqgj3mf2841h48rj30dsa9u4bd8lp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
