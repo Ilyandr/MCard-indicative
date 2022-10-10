@@ -87,8 +87,8 @@ internal class LocationService(
     }
 
     private fun showFaultToast() =
-        messageAction?.invoke(R.string.NoGEOFind)
+        messageAction?.invoke(R.string.noGEOFind)
 
     private fun showSuccessToast() =
-        messageAction?.invoke(R.string.ResultFindGEOFinal)
+        messageAction?.invoke(R.string.resultFindGEOFinal)
 }

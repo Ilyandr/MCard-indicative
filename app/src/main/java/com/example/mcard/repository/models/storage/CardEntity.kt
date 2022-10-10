@@ -7,7 +7,9 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.example.mcard.repository.features.optionally.EmptyConstructor
 import com.example.mcard.repository.models.storage.CardEntity.CREATOR.CARDS_TABLE_NAME
+import com.google.errorprone.annotations.Keep
 
+@Keep
 @EmptyConstructor
 @Entity(tableName = CARDS_TABLE_NAME)
 data class CardEntity(
@@ -27,6 +29,9 @@ data class CardEntity(
     @ColumnInfo(name = "uniqueIdentifier")
     val uniqueIdentifier: String = "",
 ) : Parcelable {
+
+    constructor() : this(null)
+
     constructor(parcel: Parcel) : this(
         parcel.readString(),
         parcel.readString(),

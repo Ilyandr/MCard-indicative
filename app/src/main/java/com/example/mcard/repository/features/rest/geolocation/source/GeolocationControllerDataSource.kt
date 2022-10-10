@@ -2,8 +2,8 @@ package com.example.mcard.repository.features.rest.geolocation.source
 
 import com.example.mcard.R
 import com.example.mcard.repository.features.location.dataSource.LocationService
-import com.example.mcard.repository.features.location.sourse.QueryParams
-import com.example.mcard.repository.features.location.sourse.QueryParams.Companion.constantHandlerAPI
+import com.example.mcard.repository.features.location.source.QueryParams
+import com.example.mcard.repository.features.location.source.QueryParams.Companion.constantHandlerAPI
 import com.example.mcard.repository.features.messageAction
 import com.example.mcard.repository.features.rest.geolocation.api.LocationSource
 import com.example.mcard.repository.models.location.PlaceSearchResponse
@@ -48,6 +48,8 @@ internal class GeolocationControllerDataSource(
     override fun onFailure(
         call: Call<PlaceSearchResponse?>, t: Throwable,
     ) {
-        messageAction?.invoke(R.string.msgApiErrorLocationService)
+        messageAction?.invoke(
+            R.string.msgApiErrorLocationService
+        )
     }
 }

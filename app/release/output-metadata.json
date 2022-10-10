@@ -4,15 +4,15 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "gcu.production.mcard",
+  "applicationId": "gcu.product.mcard",
   "variantName": "release",
   "elements": [
     {
       "type": "SINGLE",
       "filters": [],
       "attributes": [],
-      "versionCode": 24,
-      "versionName": "Siren (2.0.0)",
+      "versionCode": 3,
+      "versionName": "Rainfall 3.4.4",
       "outputFile": "app-release.apk"
     }
   ],

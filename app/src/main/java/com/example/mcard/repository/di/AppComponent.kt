@@ -27,7 +27,7 @@ import com.example.mcard.repository.di.modules.ModuleFeatures
 import com.example.mcard.repository.di.modules.ModuleRest
 import com.example.mcard.repository.di.modules.ModuleServices
 import com.example.mcard.repository.di.modules.ModuleUI
-import com.example.mcard.repository.features.location.dataSource.LocationListenerDataSourse
+import com.example.mcard.repository.features.location.dataSource.LocationDataSourse
 import com.example.mcard.repository.features.rest.firebase.CaretakerCardsFirebase
 import com.example.mcard.repository.features.rest.firebase.FirebaseController
 import com.example.mcard.repository.features.rest.firebase.GlobalFirebase
@@ -88,7 +88,7 @@ internal interface AppComponent {
 
     infix fun inject(manuallyCardAddFragment: ManuallyCardAddFragment)
 
-    infix fun inject(locationListenerDataSourse: LocationListenerDataSourse)
+    infix fun inject(locationDataSourse: LocationDataSourse)
 
     infix fun inject(openCardViewModel: OpenCardViewModel)
 

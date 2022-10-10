@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <include
-        android:id="@+id/toolbarView"
+        android:id="@+id/barLayout"
         layout="@layout/prism_top_bar_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />

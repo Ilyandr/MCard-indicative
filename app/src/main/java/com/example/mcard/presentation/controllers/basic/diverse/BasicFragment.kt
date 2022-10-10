@@ -14,7 +14,7 @@ import com.example.mcard.domain.factories.viewModels.SupportBasicViewModelFactor
 import com.example.mcard.domain.viewModels.basic.diverse.BasicViewModel
 import com.example.mcard.presentation.support.setBasicFragmentActions
 import com.example.mcard.presentation.views.other.setPaddingByBottomNavBar
-import com.example.mcard.repository.features.location.dataSource.LocationListenerDataSourse
+import com.example.mcard.repository.features.location.dataSource.LocationDataSourse
 import com.example.mcard.repository.source.architecture.view.LiveFragment
 import com.example.mcard.databinding.BasicFragmentCoordinatorBinding
 import com.example.mcard.presentation.adapters.LocaleCardsAdapter
@@ -24,19 +24,15 @@ import com.example.mcard.presentation.views.other.createSortingExtensionDialog
 import com.example.mcard.presentation.views.other.showMessage
 import com.example.mcard.repository.features.TRANSACTION_KEY
 import com.example.mcard.repository.features.navigateTo
+import com.example.mcard.repository.features.optionally.CardsSorting
 import com.example.mcard.repository.features.setVisible
-import com.example.mcard.repository.features.storage.preferences.UserPreferences
-import com.example.mcard.repository.source.usage.EntranceUsageSource
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import javax.inject.Inject
 
-internal class BasicFragment : LiveFragment<BasicModel>(), EntranceUsageSource {
+internal class BasicFragment : LiveFragment<BasicModel>() {
 
     @Inject
     lateinit var basicViewModelFactory: SupportBasicViewModelFactory
-
-    @Inject
-    override lateinit var userPreferences: UserPreferences
 
     override lateinit var viewBinding: BasicFragmentCoordinatorBinding
 
@@ -83,7 +79,19 @@ internal class BasicFragment : LiveFragment<BasicModel>(), EntranceUsageSource {
     }
 
     private lateinit var secureFacilityListener:
-            LocationListenerDataSourse.SecureFacilityListener
+            LocationDataSourse.SecureFacilityListener
+
+    private val facilityListener
+        get() =
+            LocationDataSourse(
+                this.requireContext(),
+            ) {
+                viewModel.userPreferences.sortedCardInfo(
+                    CardsSorting.DATE_SORT
+                )
+                context?.showMessage(it)
+                viewModel.refreshAction(false)
+            }
 
     override fun onAttach(context: Context) {
         appComponent inject this
@@ -97,12 +105,7 @@ internal class BasicFragment : LiveFragment<BasicModel>(), EntranceUsageSource {
         viewBinding.content.recyclerView.adapter = cardsAdapter
 
         this.secureFacilityListener =
-            LocationListenerDataSourse(
-                this.requireContext(),
-            ) {
-                requireContext() showMessage it
-                viewModel.refreshAction(false)
-            } requireSecureFacilityListener this
+            facilityListener requireSecureFacilityListener this
 
         viewModel.actionCreate()
     }
@@ -141,7 +144,9 @@ internal class BasicFragment : LiveFragment<BasicModel>(), EntranceUsageSource {
                     if (::secureFacilityListener.isInitialized) {
                         cardsAdapter setСomposedData viewModel.observableCardList
                         viewBinding.content.swipeLayout.isRefreshing = true
+
                         secureFacilityListener.launch()
+                        facilityListener.runWithGrantedAccess()
                     }
 
                 is BasicModel.EmptyDataState -> {
@@ -181,7 +186,11 @@ internal class BasicFragment : LiveFragment<BasicModel>(), EntranceUsageSource {
         super.onStart()
         lifecycleScope.launchWhenStarted {
             updateManagerList()
-            cardsAdapter.notifyDataSetChanged()
         }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        viewModel.onRefresh()
     }
 }

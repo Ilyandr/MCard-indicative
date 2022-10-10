@@ -3,12 +3,17 @@ package com.example.mcard.repository.models.storage
 import android.os.Parcel
 import android.os.Parcelable
 import androidx.annotation.Keep
+import com.example.mcard.repository.features.optionally.EmptyConstructor
 
 @Keep
+@EmptyConstructor
 internal data class BarcodeModel(
     var barcodeDataString: String? = null,
     var barcodeDataType: Int? = null,
 ) : Parcelable {
+
+    constructor() : this(null)
+
     constructor(parcel: Parcel) : this(
         parcel.readString(),
         parcel.readValue(Int::class.java.classLoader) as? Int

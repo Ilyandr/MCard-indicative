@@ -8,7 +8,9 @@ import androidx.room.PrimaryKey
 import com.example.mcard.repository.features.optionally.EmptyConstructor
 import com.example.mcard.repository.models.storage.BarcodeModel.CREATOR.SPLIT_SYMBOLS
 import com.example.mcard.repository.models.storage.HistoryEntity.CREATOR.HISTORY_TABLE_NAME
+import com.google.errorprone.annotations.Keep
 
+@Keep
 @EmptyConstructor
 @Entity(tableName = HISTORY_TABLE_NAME)
 internal data class HistoryEntity(
@@ -21,6 +23,9 @@ internal data class HistoryEntity(
     @ColumnInfo(name = "shopAddress")
     val shopAddress: String? = null,
 ) : Parcelable {
+
+    constructor() : this("")
+
     constructor(parcel: Parcel) : this(
         parcel.readString()!!,
         parcel.readString()!!,

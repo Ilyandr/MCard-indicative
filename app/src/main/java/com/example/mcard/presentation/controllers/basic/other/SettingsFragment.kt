@@ -15,6 +15,7 @@ import com.example.mcard.presentation.views.custom.CustomDialogBuilder
 import com.example.mcard.presentation.views.other.initViewToolBar
 import com.example.mcard.presentation.views.other.showMessage
 import com.example.mcard.repository.features.navigateTo
+import com.example.mcard.repository.features.requireDrawerLayout
 import com.example.mcard.repository.features.utils.DesignCardManager.removeCacheApp
 import com.example.mcard.repository.source.architecture.view.LivePreferenceFragment
 import com.example.mcard.repository.source.usage.UsageDialogFragment
@@ -93,5 +94,10 @@ internal class SettingsFragment : LivePreferenceFragment<SettingsModel>() {
         super.onViewCreated(view, savedInstanceState)
         view.findViewById<MaterialToolbar>(R.id.layoutBar).initViewToolBar()
         basicActions()
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        requireActivity().requireDrawerLayout()?.unlockDrawer()
     }
 }

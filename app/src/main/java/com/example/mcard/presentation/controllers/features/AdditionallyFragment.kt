@@ -14,10 +14,10 @@ import com.example.mcard.databinding.AdditionallyFragmentBinding
 import com.example.mcard.domain.factories.viewModels.SupportAdditionallyViewModelFactory
 import com.example.mcard.domain.models.features.AdditionallyModel
 import com.example.mcard.domain.viewModels.features.AdditionallyViewModel
+import com.example.mcard.presentation.support.setAdditionallyFragmentActions
 import com.example.mcard.presentation.views.custom.CustomDialogBuilder
-import com.example.mcard.presentation.views.other.createPaymentDialog
-import com.example.mcard.presentation.views.other.initViewToolBar
 import com.example.mcard.presentation.views.other.showMessage
+import com.example.mcard.repository.features.requireDrawerLayout
 import com.example.mcard.repository.source.architecture.view.LiveFragment
 import javax.inject.Inject
 
@@ -58,20 +58,9 @@ internal class AdditionallyFragment : LiveFragment<AdditionallyModel>() {
 
     override fun basicActions() {
 
-        viewBinding.toolbarView.toolbarView.run {
-            initViewToolBar()
-            setTitle(R.string.headerTitleCardOpenFragment)
-        }
-
-        viewBinding.paymentButton.setOnClickListener {
-
-            requireActivity().createPaymentDialog(actionFault = {
-                requireContext() showMessage R.string.paymentError
-            }) { dialog, price ->
-                dialog.dismiss()
-                viewModel.paymentController?.showPaymentDialog(price)
-            }.show()
-        }
+        viewBinding.setAdditionallyFragmentActions(
+            requireActivity(), viewModel
+        )
 
         registrationOfInteraction(viewLifecycleOwner)
         viewModel.registrationOfInteraction(viewLifecycleOwner)
@@ -100,5 +89,6 @@ internal class AdditionallyFragment : LiveFragment<AdditionallyModel>() {
     override fun onDestroy() {
         super.onDestroy()
         viewModel.viewDestroyed()
+        requireActivity().requireDrawerLayout()?.unlockDrawer()
     }
 }

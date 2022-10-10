@@ -104,7 +104,7 @@ internal class BasicViewModel(
     }
 
     override fun onRefresh() {
-        MainScope().launch(Dispatchers.Main) {
+        CoroutineScope(Dispatchers.IO).launch {
             (withContext(
                 coroutineContext + Dispatchers.IO
             ) {
@@ -118,16 +118,24 @@ internal class BasicViewModel(
                     return@launch
                 }
 
-                mutableLiveDataState.set(
-                    BasicModel.SortingListState(
-                        if (this == FREQUENCY_SORT)
-                            observableCardList.mutableList.sortByFrequency()
-                        else if (this == DATE_SORT)
-                            observableCardList.sortByDate()
-                        else
-                            observableCardList.sortByABC()
-                    )
-                )
+                CoroutineScope(Dispatchers.IO).launch {
+                    withContext(
+                        coroutineContext + Dispatchers.IO
+                    ) {
+                        questLocaleDataSource.loadCards()
+                    }.run {
+                        mutableLiveDataState.set(
+                            BasicModel.SortingListState(
+                                if (this@apply == FREQUENCY_SORT)
+                                    sortByFrequency()
+                                else if (this@apply == DATE_SORT)
+                                    sortByDate()
+                                else
+                                    sortByABC()
+                            )
+                        )
+                    }
+                }
 
                 refreshAction(false)
             }

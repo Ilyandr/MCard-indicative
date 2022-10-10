@@ -6,8 +6,10 @@ import androidx.annotation.Keep
 import androidx.room.Embedded
 import androidx.room.Relation
 import com.example.mcard.repository.features.extractParcelable
+import com.example.mcard.repository.features.optionally.EmptyConstructor
 
 @Keep
+@EmptyConstructor
 internal data class CardWithHistoryEntity(
     @Embedded
     val cardEntity: CardEntity = CardEntity(),
@@ -18,6 +20,9 @@ internal data class CardWithHistoryEntity(
     )
     val usageHistory: MutableList<HistoryEntity> = mutableListOf(),
 ) : Parcelable {
+
+    constructor() : this(CardEntity())
+
     constructor(parcel: Parcel) : this(
         parcel.extractParcelable<CardEntity>()!!,
         parcel.createTypedArrayList(HistoryEntity)!!
