@@ -1,0 +1,37 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/settingsFirstTitle">
+
+        <Preference
+            app:icon="@drawable/login_icon"
+            app:key="@string/loginPreferencesKey"
+            app:title="@string/loginHint" />
+
+        <Preference
+            app:icon="@drawable/password_icon"
+            app:key="@string/passwordPreferencesKey"
+            app:title="@string/passwordHint" />
+
+        <Preference
+            app:icon="@drawable/ic_delete"
+            app:key="@string/deleteAccountPreferencesKey"
+            app:title="@string/removeAccountTitle" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/settingsSecondTitle">
+
+        <Preference
+            app:icon="@drawable/ic_information"
+            app:key="@string/faqPreferencesKey"
+            app:title="@string/appInfoTitle" />
+
+        <Preference
+            app:icon="@drawable/ic_cache"
+            app:key="@string/cachePreferencesKey"
+            app:summary="@string/cacheDescriptionTitle"
+            app:title="@string/invalidateCacheTitle" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

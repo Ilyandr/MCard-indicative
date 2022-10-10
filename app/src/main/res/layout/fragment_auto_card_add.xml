@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".presentation.controllers.basic.cards.adding.AutoCardAddFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/description"
+            app:layout_constraintEnd_toEndOf="@+id/description"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/description">
+
+            <SurfaceView
+                android:id="@+id/cameraPreview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.example.mcard.presentation.views.custom.CustomOverlay
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/description"
+            layout="@layout/description_auto_card_add"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@id/additionalDataCardBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/dataStatusView"
+            style="@style/BasicTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:gravity="center"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp"
+            android:text="@string/dataStatusViewFirstDescription"
+            android:textColor="@color/white"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/additionalDataCardBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/additionalDataCardBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:background="@color/prism"
+            android:gravity="bottom"
+            android:hint="@string/additionalDataCardBtnOffText"
+            android:textSize="17sp"
+            android:theme="@style/BasicButtonStyle"
+            app:layout_constraintBottom_toTopOf="@+id/manuallyCardAddBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/manuallyCardAddBtn"
+            style="@style/BasicButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginBottom="?attr/actionBarSize"
+            android:background="@color/prism"
+            android:fontFamily="@font/sf_bold"
+            android:hint="@string/manuallyCardAddBtnText"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/launchFragment">
+
+    <fragment
+        android:id="@+id/launchFragment"
+        android:name="com.example.mcard.presentation.controllers.basic.other.LaunchFragment"
+        android:label="LaunchFragment"
+        tools:layout="@layout/fragment_start_app">
+        <action
+            android:id="@+id/launchBasicFragmentFromLaunchFragment"
+            app:destination="@id/basicFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/launchReceptionFragment"
+            app:destination="@id/receptionFragment2"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/basicFragment"
+        android:name="com.example.mcard.presentation.controllers.basic.diverse.BasicFragment"
+        android:label="app_bar_general_app"
+        tools:layout="@layout/basic_fragment_coordinator">
+        <action
+            android:id="@+id/launchOpenFragment"
+            app:destination="@id/LocaleCardFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/receptionFragment2"
+        android:name="com.example.mcard.presentation.controllers.authorization.ReceptionFragment"
+        android:label="ReceptionFragment"
+        tools:layout="@layout/activity_reception">
+        <action
+            android:id="@+id/launchRestoreAccount"
+            app:destination="@id/restoreFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/launchRegisterFragment"
+            app:destination="@id/registrationFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/launchBasicFragmentFromReceptionFragment"
+            app:destination="@id/basicFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.example.mcard.presentation.controllers.authorization.RegistrationFragment"
+        android:label="RegisterFragment"
+        tools:layout="@layout/fragment__register">
+        <action
+            android:id="@+id/launchBasicFragmentFromRegisterFragment"
+            app:destination="@id/basicFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/restoreFragment"
+        android:name="com.example.mcard.presentation.controllers.authorization.RestoreFragment"
+        android:label="RestoreFragment"
+        tools:layout="@layout/fragment_restore" />
+
+    <fragment
+        android:id="@+id/globalPlatformFragment"
+        android:name="com.example.mcard.presentation.controllers.basic.diverse.GlobalPlatformFragment"
+        android:label="GlobalPlatformFragment"
+        tools:layout="@layout/fragment_global_cards">
+        <action
+            android:id="@+id/launchGlobalCardFragment"
+            app:destination="@id/GlobalCardFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/createCardFragment"
+        android:name="com.example.mcard.presentation.controllers.basic.cards.adding.AutoCardAddFragment"
+        android:label="CreateCardFragment"
+        tools:layout="@layout/fragment_auto_card_add">
+        <action
+            android:id="@+id/launchManuallyCardAdd"
+            app:destination="@id/manuallyCardAdd" />
+        <action
+            android:id="@+id/launchLocaleCardFragment"
+            app:destination="@id/LocaleCardFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/manuallyCardAdd"
+        android:name="com.example.mcard.presentation.controllers.basic.cards.adding.ManuallyCardAddFragment"
+        android:label="fragment_manually_card_add"
+        tools:layout="@layout/fragment_manually_card_add">
+        <action
+            android:id="@+id/launchBasicFragment"
+            app:destination="@id/basicFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/LocaleCardFragment"
+        android:name="com.example.mcard.presentation.controllers.basic.cards.open.LocaleCardFragment"
+        android:label="fragment_open"
+        tools:layout="@layout/fragment_open">
+        <action
+            android:id="@+id/launchCreateCardFragmentWithDataResult"
+            app:destination="@id/createCardFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/GlobalCardFragment"
+        android:name="com.example.mcard.presentation.controllers.basic.cards.open.GlobalCardFragment"
+        android:label="GlobalCardFragment"
+        tools:layout="@layout/fragment_open">
+        <action
+            android:id="@+id/launchLocaleCardFragment"
+            app:destination="@id/LocaleCardFragment" />
+        <argument
+            android:name="card"
+            app:argType="com.example.mcard.repository.models.storage.CardEntity" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.mcard.presentation.controllers.basic.other.SettingsFragment"
+        android:label="SettingsFragment"
+        tools:layout="@layout/settings_fragment" />
+
+    <fragment
+        android:id="@+id/additionallyFragment"
+        android:name="com.example.mcard.presentation.controllers.features.AdditionallyFragment"
+        android:label="AdditionallyFragment"
+        tools:layout="@layout/additionally_fragment">
+
+        <!-- <deepLink
+            android:id="@+id/deepLink"
+            app:uri="mcard.co/payment" /> -->
+    </fragment>
+
+</navigation>

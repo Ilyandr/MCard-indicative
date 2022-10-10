@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/DialogView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/popup_menu_background"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/manuallyCardSecondTV">
+
+    <TableRow>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/TextCardAddStyle"
+            android:text="@string/nameDescription" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/inputName"
+            style="@style/EditTextCardAddStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:hint="@string/warningInputDataHint"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:textColorHint="@color/colorSheetInfo" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/confirmEditNameView"
+            android:layout_weight="2"
+            android:backgroundTint="@color/prism"
+            android:src="@drawable/ic_confirm"
+            android:visibility="invisible"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/dialogShadowLine" />
+
+    <TableRow>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/TextCardAddStyle"
+            android:text="@string/numberDescription" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/inputNumber"
+            style="@style/EditTextCardAddStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:inputType="number"
+            android:maxLength="16"
+            android:maxLines="1"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/confirmEditNumberView"
+            android:layout_weight="2"
+            android:backgroundTint="@color/prism"
+            android:src="@drawable/ic_confirm"
+            android:visibility="invisible"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </TableRow>
+
+    <View
+        android:id="@+id/colorTableRowDelimeter"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/dialogShadowLine" />
+
+    <TableRow android:id="@+id/colorTableRow">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/TextCardAddStyle"
+            android:text="@string/colorDescription" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/inputColor"
+            android:backgroundTint="@color/prism"
+            android:src="@drawable/ic_circle"
+            android:tint="@color/main_color"
+            android:tintMode="src_over"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </TableRow>
+</TableLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/test"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/DrawerMenu">
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        style="@style/BasicView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:fabCradleMargin="30dp"
+        app:fabCradleRoundedCornerRadius="128dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addButton"
+        style="@style/HeaderLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-1dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/app_logo"
+        android:tintMode="screen"
+        app:backgroundTint="@color/prism"
+        app:fabSize="mini"
+        app:layout_anchor="@id/bottomAppBar"
+        app:maxImageSize="32dp"
+        app:tint="@color/prism" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

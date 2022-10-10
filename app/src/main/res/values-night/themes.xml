@@ -1,0 +1,174 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="actionBarTheme">@style/ActionBar</item>
+        <item name="colorOnSurface">@color/main_color</item>
+        <item name="colorPrimary">@color/basic_app_color</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:textColorSecondary">@color/textColor</item>
+        <item name="preferenceTheme">@style/CustomPrefTheme</item>
+        <item name="textAppearanceLargePopupMenu">@style/PopupTextStyle</item>
+        <item name="textAppearanceSmallPopupMenu">@style/PopupTextStyle</item>
+        <item name="popupMenuStyle">@style/PopupMenu</item>
+    </style>
+
+    <style name="CustomPrefTheme" parent="@style/PreferenceThemeOverlay.v14.Material">
+        <item name="fontFamily">@font/sf_bold</item>
+        <item name="android:textColor">@color/color_type_primary</item>
+        <item name="android:layout">@layout/settings_fragment</item>
+        <item name="preferenceCategoryTitleTextColor">@color/textColor</item>
+    </style>
+
+    <style name="BasicLayoutTextStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:textColor">@color/main_color</item>
+        <item name="boxStrokeColor">@color/main_color</item>
+        <item name="hintTextColor">@color/main_color</item>
+        <item name="android:textColorHint">@color/main_color</item>
+        <item name="endIconTint">@color/main_color</item>
+        <item name="android:selectAllOnFocus">true</item>
+        <item name="boxBackgroundColor">#1E1E1E</item>
+        <item name="startIconTint">@color/main_color</item>
+        <item name="boxCornerRadiusBottomEnd">8sp</item>
+        <item name="boxCornerRadiusBottomStart">8sp</item>
+        <item name="boxCornerRadiusTopEnd">8sp</item>
+        <item name="boxCornerRadiusTopStart">8sp</item>
+    </style>
+
+    <style name="SecondLayoutTextStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:textColor">@color/color_type_primary</item>
+        <item name="boxStrokeColor">@color/basic_app_color</item>
+        <item name="boxBackgroundColor">@color/btn_off</item>
+        <item name="hintTextColor">@color/color_type_primary</item>
+        <item name="android:textColorHint">@color/color_type_primary</item>
+        <item name="endIconTint">@color/main_color</item>
+        <item name="android:selectAllOnFocus">true</item>
+        <item name="startIconTint">@color/main_color</item>
+        <item name="boxCornerRadiusBottomEnd">8sp</item>
+        <item name="boxCornerRadiusBottomStart">8sp</item>
+        <item name="boxCornerRadiusTopEnd">8sp</item>
+        <item name="boxCornerRadiusTopStart">8sp</item>
+    </style>
+
+    <style name="FullScreenDialogStyle" parent="AppTheme">
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+    <style name="BasicButtonStyle" parent="ThemeOverlay.Material3.Button">
+        <item name="backgroundTint">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColorHint">@color/main_color</item>
+        <item name="fontFamily">@font/sf_heavy</item>
+        <item name="android:gravity">center</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:bottomLeftRadius">8sp</item>
+        <item name="android:bottomRightRadius">8sp</item>
+        <item name="android:topLeftRadius">8sp</item>
+        <item name="android:topRightRadius">8sp</item>
+    </style>
+
+    <style name="ActionBar" parent="ThemeOverlay.Material3.BottomAppBar">
+        <item name="android:background">@color/secondPrimaryColorCustomNight</item>
+        <item name="titleTextColor">@color/main_color</item>
+        <item name="colorControlNormal">@color/main_color</item>
+        <item name="android:fontFamily">@font/sf_bold</item>
+    </style>
+
+    <style name="PopupMenu" parent="@android:style/Widget.PopupMenu">
+        <item name="android:popupBackground">@drawable/popup_menu_background</item>
+    </style>
+
+    <style name="ToolbarText" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/basic_app_color</item>
+        <item name="fontFamily">@font/sf_heavy</item>
+    </style>
+
+    <style name="BasicTextDrawerStyle" parent="@style/Text">
+        <item name="textAllCaps">false</item>
+        <item name="android:textColor">@color/color_type_primary</item>
+        <item name="android:textSize">19sp</item>
+        <item name="fontFamily">@font/sf_bold</item>
+    </style>
+
+    <style name="BasicView" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="android:background">@color/primaryViewsColor</item>
+        <item name="android:backgroundTint">@color/primaryViewsColor</item>
+        <item name="titleTextColor">@color/main_color</item>
+        <item name="colorControlNormal">@color/main_color</item>
+        <item name="android:fontFamily">@font/sf_bold</item>
+    </style>
+
+    <style name="BottomAppCustomBar" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="android:background">@color/bottomNavBarColorCustomNight</item>
+        <item name="android:backgroundTint">@color/bottomNavBarColorCustomNight</item>
+    </style>
+
+    <style name="PopupTextStyle" parent="@style/TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center</item>
+        <item name="fontFamily">@font/sf_bold</item>
+    </style>
+
+    <style name="LoadingDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/basic_app_color</item>
+    </style>
+
+    <style name="BottomSheet" parent="@style/Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@color/prism</item>
+    </style>
+
+    <style name="BaseBottomSheetDialog" parent="@style/Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="cardBackgroundColor">@color/secondPrimaryColor</item>
+        <item name="bottomSheetStyle">@style/BottomSheet</item>
+    </style>
+
+    <style name="BottomSheetDialogTheme" parent="BaseBottomSheetDialog" />
+
+    <style name="SheetCardView" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.MaterialCardView.Cut
+        </item>
+        <item name="cardBackgroundColor">@color/secondPrimaryColor</item>
+
+    </style>
+
+    <style name="ShapeAppearanceOverlay.MaterialCardView.Cut" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">16dp</item>
+        <item name="cornerSizeTopLeft">16dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+    </style>
+
+    <style name="ColorPickerDialogTheme" parent="Theme.Material3.Dark.Dialog">
+        <item name="textAllCaps">false</item>
+        <item name="fontFamily">@font/sf_heavy</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="DrawerMenu">
+        <item name="android:background">@color/thirdAppBarColor</item>
+    </style>
+
+    <style name="HeaderLogo">
+        <item name="android:backgroundTint">@color/prism</item>
+    </style>
+
+    <style name="DialogView">
+        <item name="android:backgroundTint">@color/primaryDialogColor</item>
+    </style>
+
+    <style name="BarcodeView">
+        <item name="cardBackgroundColor">@color/primaryViewsColor</item>
+        <item name="android:textColor">#08aad7</item>
+    </style>
+
+    <style name="CustomToast">
+        <item name="cardBackgroundColor">@color/toastWindowNight</item>
+    </style>
+
+</resources>

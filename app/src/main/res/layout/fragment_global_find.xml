@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/mainLinearLayout"
+    android:orientation="vertical"
+    android:background="@color/prism">
+
+    <LinearLayout
+        android:id="@+id/bar_icon"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="center">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/back_icon"
+            android:background="@color/prism"
+            android:layout_gravity="center"
+            android:id="@+id/btn_back"
+            tools:ignore="NestedWeights,RtlHardcoded,RtlSymmetry" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/input_search_icon"
+            android:paddingStart="12sp"
+            android:textColorHint="@color/basic_app_color"
+            android:typeface="monospace"
+            android:layout_weight="0.40"
+            android:maxLines="1"
+            android:id="@+id/get_find_info"
+            android:layout_gravity="center"
+            android:hint="Например: Neo"
+            android:textSize="16sp"
+            android:layout_margin="10sp"
+            tools:ignore="Autofill,HardcodedText,InefficientWeight,NestedWeights,RtlSymmetry,TextFields" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="17sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12"
+        android:orientation="horizontal">
+
+    <!--    <com.example.mcard.presentation.views.custom.CustomHeader
+            android:id="@+id/list_item_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null" />-->
+    </RelativeLayout>
+</LinearLayout>

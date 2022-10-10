@@ -1,0 +1,449 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">MCard</string>
+    <string name="Main_text">MCard</string>
+    <string name="text2">-</string>
+    <string name="photo">Photo</string>
+    <string name="video">Video</string>
+    <string name="text0">Отсканируйте вашу карту ровно по границам. Для сохранения - введите название карты и нажмите на кнопку снизу.</string>
+    <string name="custom">Расширенное</string>
+    <string name="select">Готово</string>
+    <string name="choose_color">Выберите цвет</string>
+    <string name="presets_button_text">Назад</string>
+    <string name="text_btn_subscribe">Оформить подписку</string>
+    <string name="string_MCard">MCard+</string>
+    <string name="title_activity_subscribe">ActivitySubscribe</string>
+    <string name="payments_show_name" translatable="false">Successfully received payment data for %s!</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next" translatable="false">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="left_menu_subscribe">Дополнительно</string>
+    <string name="left_menu_settings">Настройки</string>
+    <string name="left_menu_support">Поддержка</string>
+    <string name="left_menu_history_operation">История</string>
+    <string name="left_menu_global_info">Глобальная площадка</string>
+    <string name="left_menu_list_friends">Активность</string>
+    <string name="left_menu_user_profile">Профиль</string>
+    <string name="left_menu_user_name">Пользователь</string>
+
+    <string name="subscribeInfo">- Увеличение количества пользователей одного аккаунта до 5-ти человек.\n\n
+    - Неограниченное хранение / добавление личных и общих карт.\n\n
+    - Ежедневное использование функции \"Сортировка карт по дальности магазинов\" на одном аккаунте до 30 раз.\n\n
+    - Снятие ограничений на персональный дизайн для карт.\n\n
+    - Эксклюзивная рамка фотографии аккаунта в функции \"Глобальный профиль\".\n\n
+    - Неизмеримый вклад в развитие данного проекта, ведь приобретая подписку - вы обеспечивайте себе ещё больше крутых функций в будущих обновлениях. Спасибо.
+    </string>
+
+    <string name="changeColorCardInfo">1) Режим \"Простой\" - цвет текста на карте чёрно-белый.\n\n2) Режим \"Инверсия\" - цвет текста противоположен преобладающему цвету карты.</string>
+    <string name="ResultFindGEO">Остаточный лимит сортировки карт по дальности магазинов</string>
+    <string name="ResultFindGEOFinal">Список карт успешно отсортирован по дальности магазинов</string>
+    <string name="NoGEOFind">Совпадений ваших карт с магазинами поблизости не обнаружено</string>
+    <string name="nameGlobalFragment">Глобальная площадка</string>
+    <string name="selectPhotoDesignCard">Выберите фотографию для дизайна карты</string>
+    <string name="setImageProgram">image/*</string>
+    <string name="SuccessImport">Карта успешно импортирована</string>
+    <string name="SuccessSync">Новые данные успешно синхронизированы</string>
+    <string name="ReadyCard">Макет карты успешно построен, для изменения данных карты - внесите корректировки в поля ввода</string>
+    <string name="AlternativeDesign">Реалистичный дизайн</string>
+    <string name="ErrorStage">При считывании данных с карты произошла ошибка - повторите попытку</string>
+    <string name="ErrorChangeColor">Ошибка - макет карты не построен, повторите попытку</string>
+    <string name="cardName">Название карты</string>
+    <string name="colorCardText">Цвет карты (Авто)</string>
+    <string name="barcodeCardText">Штрих код карты (Авто)</string>
+    <string name="numberCardText">Номер карты (Авто)</string>
+    <string name="Subscribe">Подписаться</string>
+    <string name="ReqCard">Запрос карты</string>
+    <string name="SubscribersList">Список подписчиков</string>
+    <string name="PublicCardList">Список публичных карт</string>
+    <string name="BlockUser">Заблокировать</string>
+    <string name="SuccessUpdatePhoto">Фото аккаунта успешно обновлено</string>
+    <string name="FaultLoadPhoto">Произошла ошибка загрузки фотографии</string>
+    <string name="LocaleProfileUpdate">Личные данные профиля успешно обновлены</string>
+    <string name="Register">Зарегистрироваться</string>
+    <string name="NoAccInfo">Нет аккаунта?</string>
+    <string name="ResetAccount">Восстановить аккаунт</string>
+    <string name="ErrorNetwork">Проверьте подключение к интеренту и повторите попытку ещё раз</string>
+    <string name="ErrorAccName">Ошибка - данное имя уже занято, придумайте новое и повторите регистрацию</string>
+    <string name="RatingInfo">В этом окне показана ваша позиция по количеству публикаций дисконтных карт в глобальной площадке. Публикуйте больше карт для поднятия своего рейтинга.</string>
+    <string name="SuccessRegister">Вы успешно зарегистрировались!</string>
+    <string name="userString">Пользователь</string>
+    <string name="altDesignName">Реалистичный дизайн</string>
+    <string name="changeLogin">Сменить логин</string>
+    <string name="changePass">Сменить пароль</string>
+    <string name="removeDesignCard">Удалить дизайн</string>
+    <string name="changeColor">Изменить цвет</string>
+    <string name="NetworkErr">Ошибка интернет соединения. Проверьте подключение к сети и повторите попытку</string>
+    <string name="unknownError">Произошла непредвиденная ошибка - повторите попытку</string>
+    <string name="paymentError">Введена некорректная сумма</string>
+    <string name="loadingInfo">Загрузка данных..</string>
+    <string name="settingsCards">Вид карт</string>
+    <string name="succsessGravityText">Расположение текста карты успешно изменено</string>
+    <string name="errorCardSizeChange">Ошибка - введённые параметры превышают допустимые значения</string>
+    <string name="successCardSize">Размер карт успешно изменён</string>
+    <string name="successUpdateTextColor">Настройки цвета текста карты успешно обновлены</string>
+    <string name="succsessChangeTextSize">Размер текста на картах успешно изменён</string>
+    <string name="succsessChangeBorderCard">Настройки закругления границ успешно сохранены</string>
+    <string name="defaultNumberCard">1234 5678 9012 3456</string>
+    <string name="defaultNameCard">Макет</string>
+    <string name="askDefaultSettings">Вы точно хотите сбросить все настройки интерфейса карт? Отменить данное действие будет невозможно.</string>
+    <string name="succsessDefaultSettings">Настройки интерфейса карт успешно сброшены</string>
+    <string name="addCard">Добавить карту</string>
+    <string name="profileOwner">Профиль владельца</string>
+    <string name="findSimilarCards">Найти похожие карты</string>
+    <string name="goBack">Назад</string>
+    <string name="lastSync">Последняя синхронизация:\n</string>
+    <string name="updateCards">Кол-во обновлённых карт:</string>
+    <string name="successAltDesign">Поиск альтернативного дизайна для карт успешно запущен</string>
+    <string name="offlineNetworkMSG">Ошибка - отсутствует подключение к сети</string>
+    <string name="dontHaveSubscribe">Состояние подписки: отсутствует</string>
+    <string name="errorSmallDateSub">Ошибка - новая продолжительность подписки не может быть большей или равной по отношению к текущей</string>
+    <string name="errorRestore">Ошибка соеденения с сервером - повторите попытку заного</string>
+    <string name="errorRestoreAccountEmail">Ошибка - неправильно введён логин, повторите попытку</string>
+    <string name="errorAccountID">Ошибка - такого аккаунта не существует, проверьте корректность введённых данных</string>
+    <string name="errorCheckEmptyText">Ошибка - обнаружены пустые поля, введите корректные данные и повторите попытку</string>
+    <string name="successSendPass">Письмо с кодом подтверждения успешно выслано вам на почту, введите его в поле ниже</string>
+    <string name="errorConfirmCode">Ошибка - введён неверный код. Повторите попытку заного</string>
+    <string name="successChangePassword">Пароль успешно изменён</string>
+    <string name="errorServerChangePassword">Произошла ошибка, повторите попытку ещё раз</string>
+    <string name="errorInputNumberCard">Ошибка - введён некорректный номер карты</string>
+    <string name="errorInputNameCard">Ошибка - введено некорректное название карты</string>
+    <string name="errorSyncSingle">Ошибка - данная опция доступна только при выключенной авто синхронизации</string>
+    <string name="changeSyncMode">Режим синхронизации успешно изменён. Новые настройки вступят в силу при следующем запуске приложения</string>
+    <string name="successSyncData">Данные успешно синхронизированы</string>
+    <string name="successSavaDataUseCard">История использования карты успешно сохранена</string>
+    <string name="infoRemoveHistory">Вы точно хотите удалить данную запись истории? Отменить это действие будет невозможно</string>
+    <string name="warningUpdateGlobalPhoto">Внимание - отсутствует интернет соеденение. Фотография глобального профиля будет автоматически обновлена при подключении к сети</string>
+    <string name="errorRemoveAccount">Во время удаления аккаунта произошла непредвиденная ошибка. Повторите попытку заного</string>
+    <string name="errorCheckLogin">Ошибка проверки - введён некорректный логин</string>
+    <string name="errorCheckPassword">Ошибка проверки - введён некорректный пароль</string>
+    <string name="errorCheckID">Введён неккоректное имя аккаунта - повторите попытку</string>
+    <string name="infoDevUserApp"><u>Разработчик: Илья Александрович.</u></string>
+    <string name="errorRequestCardText">Ошибка - введён некорректный запрос. Повторите попытку</string>
+    <string name="errorImportCardCount">Ошибка - нельзя совершать импорт карты более 1-го раза</string>
+    <string name="successAcceptRequest">Предложение успешно подтверждено!</string>
+    <string name="askRemoveDesignCard">Вы точно хотите удалить дизайн карты? В случае удаления - вид карты будет возвращён к исходному без возможности возврата.</string>
+    <string name="errorContainsAccID">Ошибка - данное имя аккаунта уже занято</string>
+    <string name="errorBuildMCard">Ошибка - нехватает данных для добавления карты. Заполните все поля и повторите попытку</string>
+    <string name="warningHaveAltDesign">На данный момент для этой карты недоступен альтернативный дизайн</string>
+    <string name="errorRejectRequestCard">При отклонении запроса произошла неизвестная ошибка - повторите попытку снова</string>
+    <string name="errorSendRequest">При отправке запроса возникла ошибка - повторите попытку заного</string>
+    <string name="alertBtnHaveBarcodeText">С штрих-кодом</string>
+    <string name="alertBtnNotHaveBarcodeText">Без штрих-кода</string>
+    <string name="alertBtnNumberPhoneText">По номеру телефона</string>
+    <string name="infoNotBarcodeCardAdd">Штрих-код недоступен</string>
+    <string name="infoNotAutoColorCardAdd">Цвет карты (кнопка справа)</string>
+    <string name="infoNumberPhoneCardOwner">Номер телефона владельца карты</string>
+    <string name="infoToastAutoColorCardAdd">Поместите полностью карту в объектив и нажмите нижнюю кнопку \"Получить цвет\"</string>
+    <string name="errorFindAltDesign">Ошибка - необходимо заполнить все данные карты. Ввведите данные и повторите попытку</string>
+    <string name="infoSuccessEditBarcode">Штрих-код карты обновлён</string>
+    <string name="warningLoadGlobalCards">Внимание - глобальные карты не загружены. Проверьте ваше подключение к сети и повторите попытку</string>
+    <string name="messageWarningOwnerCard">Ошибка - вы не являйтесь владельцем данной карты</string>
+    <string name="dontAcceptChangeCard">Внимание - данная карта опубликована в глобальной площадке, для изменения данных необходимо интернет соеденение</string>
+    <string name="successGlobalSyncCard">Новые данные глобальной площадки успешно синхронизированы</string>
+    <string name="InfoPushCard">Внимание, выкладывая данную карту на глобальную площадку, вы даёте своё согласие на её использование всеми пользователями. Доступ редактирования данных карты и управление публикацией останутся только за вами.</string>
+    <string name="warningChangeCardAddColor">Для изменения цвета - макет карты должен быть составлен. Нажмите кнопку \"Готово\" и повторите попытку заного</string>
+    <string name="infoFriends">Подписки</string>
+    <string name="errorFirebaseAuth">Во время регистрации произошла неизвестная ошибка - повторите попытку заного</string>
+    <string name="infoSubscribe">Подписчики</string>
+    <string name="infoUploadPhotoProfile">Процесс загрузки фотографии успешно запущен</string>
+    <string name="warningBlockAccountCheck">Ошибка доступа - вы были заблокированы данным аккаунтом</string>
+    <string name="warningAddNewCardLocale">Ошибка сохранения карты - данная карта уже имеется на вашем устройстве</string>
+    <string name="warningCheckGlobalRCard">Ошибка - данная карта уже имеется на выбранном аккаунте</string>
+    <string name="warningAccessChangeCard">Ошибка - у вас нет доступа на изменение данных карты. Владелец карты: </string>
+    <string name="errorLoadPrimaryImage">При загрузке данных произошла ошибка - повторите попытку позже</string>
+    <string name="messageTypeAddImage">1) Личная фотография - тип фото профиля, просмотр которого доступен только вам.\n\n2) Глобальная фотография - тип фото профиля, просмотр которого доступен только остальным пользователям.\n\n3) Общая фотография - тип фото профиля, включающий в себя сразу два предыдущих пункта.</string>
+    <string name="infoTypeAddImage">Выберите тип фотографии профиля</string>
+    <string name="warningAddNewCard">Приложение не получило доступ к необходимым компонентам - действие добавления новой карты отклонено</string>
+    <string name="warningAddImageProfile">Приложение не получило доступ к хранилищу устройства - действие добавления изображения профиля отклонено</string>
+    <string name="warningAddImageCard">Приложение не получило доступ к хранилищу устройства - действие добавления собственного дизайна для карты отклонено</string>
+
+    <string name="errorSubscribePrice">Ошибка - подписка на указаный вами срок уже активирована</string>
+    <string name="warningSetAnimCards">Внимание - данная функция не поддерживается на вашем устройстве</string>
+    <string name="messagePermissionUseGEO">Внимание, для функции \"Сортировка карт по дальности магазинов\" - необходимо предоставить разрешение на использование геолокации вашего устройства.</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="messageGeoEmpty">Магазинов по близости не найдено, повторите попытку поиска</string>
+    <string name="empty" />
+
+    <string name="messageActionGeolocation">Для сортировки карт по дальности магазинов - необходимо включить геолокацию на вашем устройстве.</string>
+    <string name="messageActionChangeBarcode">Для изменения штрих-кода карты - необходимо предоставить доступ к камере вашего устройства. После предоставления разрешения - повторите попытку заного.</string>
+    <string name="messageActionAdding">Для добавления новой карты необходимо предоставить некоторые права.</string>
+    <string name="messageActionExStorageImage">Для добавления фотографии профиля - необходимо предоставить доступ к хранилищу вашего устройства. После предоставления разрешения - повторите попытку добавления изображения заного.</string>
+    <string name="messageActionDoubleCameraAndExStorage">Для добавления новой карты - необходимо предоставить доступ к камере и хранилищу вашего устройства. После этого - меню выбора типа добавления карты будет запущено повторно.</string>
+
+    <string name="infoAcceptAction">Подтверждение действия</string>
+    <string name="messageFAQGlobal">Вы находитесь в глобальной площадке, здесь вы можете искать подходящие для себя карты от других пользователей, искать глобальные аккаунты людей, а также просматривать рейтинг публикаций пользователей.</string>
+    <string name="messageRemoveCard">Внимание - действие удаления будет невозможно отменить. Карта автоматически будет снята публикации, если она опубликована. Пользователи, добавившие вашу карту - не имеют прав управлять ею.</string>
+    <string name="messageRemoveAccount">Внимание - данное действие будет невозможно отменить.</string>
+    <string name="messageExitAccountRegistration">Вы точно хотите выйти из аккаунта? При выходе все ваши личные данные будут сохранены в облаке и выгружены при следующем входе в данный профиль.</string>
+    <string name="messageExitAccountNoRegistration">Вы точно хотите выйти из оффлайн-аккаунта? При выходе все ваши личные данные будут удалены. Для синхронизации данных вам необходимо зарегистрироваться.</string>
+    <string name="successGetPermissions">Разрешения успешно предоставлены!</string>
+    <string name="messageRequestCardUser">Введите сообщения для запроса (не более 20 символов).</string>
+    <string name="errorAddNewCard">Ошибка добавления карты - найдено повторение. Поробуйте добавить другую карту</string>
+    <string name="errorCheckPasswordsRegister">Ошибка - пароли не совпадают. Проверьте правильность ввода и повторите попытку</string>
+    <string name="warningImportGlobalCard">Внимание, чтобы использовать данную карту - необходимо перенести её в свой кошелёк</string>
+    <string name="warningSendMessageUser">Данное действие недоступно, вы не подписаны на данного пользователя</string>
+    <string name="successGlobalOfferCard">Запрос карты успешно отправлен - ожидайте ответа получателя</string>
+    <string name="titleSelectColorApp">Выберите цвет темы приложения</string>
+    <string name="messageSuccessUpdateColorApp">Цвет интерфейса приложения успешно обновлён</string>
+    <string name="messageConfirmDefaultInterfaceApp">Вы действительно хотите сбросить настройки интерфейса приложения? Отменить данное действие будет невозможно.</string>
+    <string name="messageSuccessDefaultInterfaceApp">Настройки интерфейса приложения успешно сброшены</string>
+    <string name="warningChangeInterfaceApp">Внимание - выбран недоступный цвет интерфейса приложения, повторите попытку смены заного</string>
+    <string name="messagePermissionCamera">Для изменения штрих-кода карты - необходимо предоставить доступ приложению к камере вашего устройства. Псоле этого повторите попытку заного.</string>
+    <string name="successChangeIconsIcon">Цвет значков приложения успешно изменён</string>
+    <string name="successChangeAppColorText">Цвет текста в приложении успешно изменён</string>
+    <string name="messageSelectIconsColorApp">Выберите цвет значков приложения</string>
+    <string name="messageSelectTextColorApp">Выберите цвет текста приложения</string>
+    <string name="messageWaitReception">Дождитесь проверки данных по выбранному аккаунту</string>
+    <string name="btnPayInfo">Другие способы оплаты</string>
+    <string name="infoSubscribeSubscribe">Подписка MCard+</string>
+    <string name="infoUserSelectSubscribeData">Выбрано:</string>
+    <string name="infoBuyInAppSubscribe">Цифровой товар</string>
+    <string name="infoSubscribePrice">Стоимость:</string>
+    <string name="additionalyIInfoBuySubscribe">Данная покупка не подлежит дальнейшему возврату. Вы можете ещё раз ознакомиться с возможностяими подписки MCard+.</string>
+    <string name="errorBuySubscribe">При совершении покупки возникла ошибка</string>
+    <string name="errorToastUnknownBuySubscribe">При опкупке произошла непредвиденная ошибка</string>
+    <string name="infoSuccessBuySubscribe">Подписка MCard+ была успешно продлена! Благодарим вас за поддержку данного проекта.</string>
+    <string name="btnSecondStagePayment">Оплатить</string>
+    <string name="errorActionBuySubscribe">Операция отклонена</string>
+    <string name="btnCompleteHint">Готово</string>
+    <string name="infoDialogSaveAddCard">Выбор раздела хранения карты</string>
+    <string name="infoChanheCardAddColor">Выбор режим смены цвета карты</string>
+    <string name="infoBtnCompleteStageFirst">Образ карты</string>
+    <string name="restorePasswordAccountInfo">Письмо с восстановлением пароля выслано на вашу почту</string>
+    <string name="errorRestoreAccountID">Ошибка - введён некорректный ID аккаунта</string>
+    <string name="btnInfoPoliticalConf"><u>Политика конфиденциальности.</u></string>
+    <string name="btnPayInfo2">Оплатить через Google Play</string>
+    <string name="btnPayInfo3">Оплата банковской картой</string>
+    <string name="infoStartGeoFindCards">Поиск карт по местоположению запущен - дождитесь завершения загрузки</string>
+    <string name="errorVerificationApp">Произошла ошибка внутренней проверки - вход не выполнен</string>
+    <string name="yandex_title">Yandex</string>
+    <string name="titleInfoActionADS">Доступ к действию</string>
+
+    <string name="warningAuthSub">Внимание - максимальное число различных пользователей одного аккаунта не может превышать пять человек.</string>
+    <string name="GENERAL_SHOP_ID">This is an indicative model of the application, without api keys.</string>
+    <string name="GENERAL_SHOP_PASSWORD">This is an indicative model of the application, without api keys.</string>
+    <string name="MAIN_YKASSA_LINK">https://api.yookassa.ru/v3/</string>
+    <string name="YKASSA_FORMAT_TYPE">application/json</string>
+    <string name="CURRENCY_APP_RU">RUB</string>
+    <string name="errorPaymentInfo">Во время платежа была вызвана неизвестная ошибка - повторите попытку заного</string>
+    <string name="GENERAL_SHOP_API_PASSWORD">This is an indicative model of the application, without api keys.</string>
+    <string name="GENERAL_CLIENT_API_ID">This is an indicative model of the application, without api keys.</string>
+    <string name="GENERAL_PAYMENT_TITLE">Оплата MCard+</string>
+    <string name="roleAdmin">admin</string>
+    <string name="roleAdditional">additional</string>
+    <string name="roleSmallAdmin">small_admin</string>
+    <string name="infoLoadingDialogCheckData">Проверка данных</string>
+    <string name="warningChangeAccountPassword">Отказано в доступе - вы не являетесь исходным пользователем или создателем данного аккаунта</string>
+    <string name="warningChangeAccountLogin">Отказано в доступе - смена логина доступна только создателю аккаунта</string>
+    <string name="warningRemoveAccount">Отказано в доступе - удаление аккаунта доступна только создателю аккаунта</string>
+    <string name="dialogInfo">Менеджер уведомлений</string>
+    <string name="infoRemovedAccount">Внимание - данные текущего аккаунта были изменены одним из участников аккаунта. Для перехода на главную страницу нажмите кнопку ниже и подтвердите новые данные.</string>
+    <string name="dialogButtonExit">Выход</string>
+    <string name="TableNameFirebase">USERS ACCOUNT INFO</string>
+    <string name="paymentAccept">avaiblePayment</string>
+    <string name="infoConfirmUpdateAccountData">Новые данные успешно подтверждены</string>
+    <string name="warningConfirmChangeAccountData">Ошибка подтверждения - введены неверные данные</string>
+    <string name="infoSyncImageProfile">Синхронизация фотографии профиля</string>
+    <string name="infoLoadingDeleteAccount">Удаление аккаунта</string>
+    <string name="YANDEX_REWARDED_UID" tools:ignore="TypographyDashes">This is an indicative model of the application, without api keys.</string>
+    <string name="YANDEX_METRICA_API_KEY" tools:ignore="TypographyDashes">This is an indicative model of the application, without api keys.</string>
+
+    <string name="menuSortInfo1">По местоположению</string>
+    <string name="menuSortInfo2">По использованию</string>
+    <string name="menuSortInfo3">По алфавиту</string>
+    <string name="menuSortInfo4">По дате</string>
+
+    <string name="menuITitleCardOptions1">Новый штрих-код</string>
+    <string name="menuITitleCardOptions2">Изображение</string>
+    <string name="menuITitleCardOptions3">Публикация</string>
+    <string name="menuITitleCardOptions4">Удалить</string>
+
+    <string name="stageScanNumberCard"><u>Наведите камеру на номер карты, либо заполните его вручную</u></string>
+    <string name="stageScanBarcodeCard"><u>Наведите камеру на штрих-код карты</u></string>
+    <string name="stageScanColorCard"><u>Поместите карту в объектив и получите цвет, либо установите его вручную</u></string>
+    <string name="stageScanManual"><u>Заполните данные карты вручную (номер телефона, название) и добавьте её в нужный раздел хранения</u></string>
+    <string name="stageScanFinaly"><u>Карта успешно построена - проверьте данные и добавьте её в нужный раздел хранения</u></string>
+    <string name="infoSuccessHistoryCard">История использования карты успешно сохранена</string>
+    <string name="menuInfoGlobalCards">Общий раздел</string>
+    <string name="menuInfoPersonalCards">Личный раздел</string>
+    <string name="infoBtnReceptionOffline">Продолжить без входа</string>
+    <string name="infoDialogOfflineEntrance">Внимание, пользуясь приложением без авторизации, вам будут недоступны такие действия, как: синхронизирование аккаунта, сортировка карт по дальности магазинов, глобальная система. Вы сможете зарегистрироваться позже.</string>
+    <string name="titleDialogReception">Вход</string>
+    <string name="infoSuccessEntrance">Вход выполнен</string>
+    <string name="waningMessageRegister">Для выполнения данного действия необходимо зарегистрироваться</string>
+    <string name="registerDialogBtn">Регистрация</string>
+    <string name="loadingInfoCardDesign">Поиск дизайна на карту</string>
+
+    <string name="dialogSettingsText0">Палитра</string>
+    <string name="dialogSettingsText1">Текст</string>
+    <string name="dialogSettingsText2">Сброс</string>
+
+    <string name="dialogSettingsCard0">Расположение</string>
+    <string name="dialogSettingsCard1">Текст</string>
+    <string name="dialogSettingsCard2">Размер</string>
+    <string name="msgLoadingDataAccount">Загрузка данных аккаунта..</string>
+    <string name="errorRegistration">Во время регистрации произошла неизвестная ошибка - повторите попытку заного</string>
+    <string name="errorAuth">Во время авторизации произошла неизвестная ошибка - повторите попытку заного</string>
+    <string name="msgLoadingCheckAuth">Выполняется проверка данных аккаунта</string>
+    <string name="warningIncorrectAuth">Введён неправильный логин или пароль - повторите попыту заного</string>
+    <string name="registerBarName">Регистрация</string>
+    <string name="restoreBarName">Восстановление</string>
+    <string name="authBarName">Авторизация</string>
+    <string name="bottomBarHomeTitle">Главная</string>
+    <string name="bottomBarAddTitle">Добавить</string>
+    <string name="bottomBarGlobalTitle">Глобальное</string>
+    <string name="titleBasicFragment">Главная</string>
+    <string name="loginHint">Логин (email)</string>
+    <string name="passwordHint">Пароль</string>
+    <string name="hintBtnStartAppReception">Войти</string>
+    <string name="btnHintRestoreAccount">Далее</string>
+    <string name="hintAccountName">Имя аккаунта</string>
+    <string name="backBtnTextDialog">Отмена</string>
+    <string name="msgSuccessRemoveAccount">Аккаунт успешно удалён</string>
+    <string name="msgWarningInputData">Введены неверные данные</string>
+    <string name="msgWarningInputPassword">Ошибка - введён направильный пароль</string>
+    <string name="password">password</string>
+    <string name="successChangeLogin">Логин успешно изменён</string>
+    <string name="successChangeCardInfo">Данные карты обновлены</string>
+
+    <string-array name="google_glyph_strings">
+        <item>M232.5,61.17C207.25,46.59 174.97,55.25 160.37,80.5L123.59,144.22C112.95,162.62 126.65,169.05 141.93,178.21L177.32,198.64C189.31,205.55 204.62,201.45 211.53,189.48L249.34,124C262.05,101.99 254.51,73.87 232.5,61.17</item>
+        <item>M190.88,87.54L155.49,67.11C135.95,56.27 124.89,55.55 116.87,68.3L64.67,158.7C50.09,183.94 58.77,216.21 84,230.76C106.01,243.46 134.13,235.92 146.83,213.92L200.03,121.76C206.97,109.78 202.87,94.46 190.88,87.54</item>
+        <item>M197.7,41.07L172.84,26.71C145.34,10.84 110.18,20.25 94.31,47.75L46.98,129.72C39.99,141.82 44.14,157.3 56.23,164.28L84.07,180.35C97.82,188.29 115.39,183.58 123.34,169.83L177.41,76.18C188.61,56.78 213.41,50.14 232.81,61.34L197.7,41.07</item>
+        <item>M101.03,71.2L74.16,55.72C62.18,48.82 46.87,52.91 39.95,64.87L7.71,120.58C-8.16,148 1.25,183.08 28.75,198.9L49.21,210.69L74.02,224.98L84.79,231.18C65.67,218.38 59.6,192.74 71.29,172.55L79.64,158.13L110.21,105.3C117.11,93.38 113,78.1 101.03,71.2</item>
+    </string-array>
+
+    <integer-array name="google_glyph_colors">
+        <item>@color/basic_app_color</item>
+        <item>@color/logo2</item>
+        <item>@color/logo3</item>
+        <item>@color/logo4</item>
+    </integer-array>
+
+    <string name="defaultProfileImageUrl">This is an indicative model of the application, without api keys.</string>
+    <string name="cancelCardPublication">Отменить публикацию</string>
+    <string name="shareCardText">Поделиться</string>
+    <string name="login">login</string>
+    <string name="cancelSubscribe">Отписаться</string>
+    <string name="successBuyMCardPlus">Подписка оформлена</string>
+    <string name="warningWithUserBlocked">Произошла ошибка - вы заблокировали данного пользователя</string>
+    <string name="cancelSubscribeMsg">Подписка отменена</string>
+    <string name="subscribeBtn">Подписаться</string>
+    <string name="successBlockUser">Пользователь успешно заблокирован</string>
+    <string name="unlockUserBtn">Разблокировать</string>
+    <string name="successUnlockUserMsg">Пользователь успешно разблокирован</string>
+    <string name="userBlocked">Заблокировать</string>
+    <string name="backDialogBtnName">Назад</string>
+    <string name="nextDialogBtnName">Далее</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="firstDescriptionCardAdd">Добавление карты</string>
+    <string name="secondDescriptionCardAdd">Для сканирования необходимо поместить скидочную карту в рамку</string>
+    <string name="permissionDialogTitle">Разрешения</string>
+    <string name="permissionToastWarning">Разрешения не предоставлены, запуск ручного добавления</string>
+    <string name="permissionError">Разрешения не предоставлены, действие отклонено</string>
+    <string name="manuallyCardAddBtnText">Добавить данные вручную</string>
+    <string name="additionalDataCardBtnOffText">Без штрих-кода</string>
+    <string name="additionalDataCardBtnOnText">Со штрих-кодом</string>
+    <string name="manuallyCardFirstDescription">Данные карты</string>
+    <string name="manuallyCardSecondDescription">Заполните данные вашей карты</string>
+    <string name="nameDescription">Имя</string>
+    <string name="numberDescription">Номер</string>
+    <string name="colorDescription">Цвет</string>
+    <string name="warningInputDataHint">Обязательно</string>
+    <string name="dataStatusViewFirstDescription">Поместите в объектив сторону с названием</string>
+    <string name="dataStatusViewSecondDescription">Поместите в объектив переднюю сторону с номером</string>
+    <string name="dataStatusViewThirdDescription">Поместите в объектив сторону с штрих-кодом</string>
+    <string name="dataStatusViewFourthDescription">Поместите в объектив всю лицевую сторону</string>
+    <string name="msgWarningAddCard">Введены неверные данные карты</string>
+    <string name="openCardDataViewTitle">Информация о карте</string>
+    <string name="openCardDataViewHistoryTitle">История использования</string>
+    <string name="textBarcodeNoneCard">Штрих-код отсутствует</string>
+    <string name="msgErrorLocation">Во время получения местоположения произошла ошибка</string>
+    <string name="msgDialogProposalWriteHistory">Сохранить историю использования текущей карты?</string>
+    <string name="msgSuccessWriteHistory">Запись истории успешно сохранена</string>
+    <string name="descriptionShowInMaps">Показать на карте</string>
+    <string name="msgErrorGetAddress">Адрес не определён</string>
+    <string name="warningSelectNavigation">Для отображения адреса вам необходимо включить сортировку карт по дальности магазинов, а затем создать новую запись истории</string>
+    <string name="secondDescriptionAutoCardAdd">Обновление штрих-кода</string>
+    <string name="secondDescriptionCardAddBySingle">Для обновления штрих-кода необходимо поместить нужную сторону карты в рамку</string>
+    <string name="msgEmptyCardsList">Список ваших карт пуст</string>
+    <string name="headerTitleCardOpenFragment">Дополнительно</string>
+    <string name="headerTitleSorting">Сортировка карт</string>
+    <string name="msgSuccessPublishCardFirst">Карта опубликована</string>
+    <string name="msgSuccessPublishCardSecond">Публикация отменена</string>
+    <string name="msgLocaleRemoveCard">Карта удалена</string>
+    <string name="msgWarningRemovePublishCard">Для удаления опубликокванной вами карты необходимо подключение к сети</string>
+    <string name="titleDialogHistory">История</string>
+    <string name="msgWarningChangeCardInfo">Данные карты не могут быть пустыми</string>
+    <string name="msgApiErrorLocationService">При определении местоположения произошла ошибка</string>
+    <string name="searchViewHint">Поиск</string>
+    <string name="titleImportButton">Добавить к себе</string>
+    <string name="acceptCardAddMessage">Вы действительно хотите импортировать данную карту в ваш личный список?</string>
+    <string name="successImportToast">Глобальная карта успешно перенесена в ваш список</string>
+    <string name="loadingTitle">Загрузка данных</string>
+    <string name="infoGlobalTitle">Информация</string>
+    <string name="messageGlobalFaq">Добро пожаловать в глобальную систему. Здесь вы можете искать и сохранять скидочные карты, опубликованные пользователями. Вы также можете делиться и личными картами</string>
+    <string name="errorCancelDeleteCard">Данная карта опубликована, для удаления необходимо подключение к интернету</string>
+    <string name="additionalTitleDrawer">Тема приложения</string>
+    <string name="exitTitle">Выход</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="removeAccountTitle">Удалить аккаунт</string>
+    <string name="appInfoTitle">О приложении</string>
+    <string name="invalidateCacheTitle">Очистить кеш</string>
+    <string name="cacheDescriptionTitle">Обновление изображений для всех карт</string>
+    <string name="settingsFirstTitle">Личные данные</string>
+    <string name="settingsSecondTitle">Прочее</string>
+    <string name="loginPreferencesKey">login</string>
+    <string name="passwordPreferencesKey">password</string>
+    <string name="deleteAccountPreferencesKey">deleteAccount</string>
+    <string name="faqPreferencesKey">faq</string>
+    <string name="cachePreferencesKey">cache</string>
+    <string name="newDataChangeTitle">Новые данные</string>
+    <string name="oldDataChangeTitle">Старые данные</string>
+
+    <string name="loginPreferencesTitle">Смена логина</string>
+    <string name="passwordPreferencesTitle">Смена пароля</string>
+    <string name="deleteAccountPreferencesTitle">Удаление аккаунта</string>
+    <string name="deleteAccountPreferencesMessage">Удаление аккаунта затронет всех участников аккаунта, а также лишит вас возможности восстановить текущие данные</string>
+    <string name="faqPreferencesTitle">О приложении</string>
+    <string name="faqPreferencesMessageHeader">MCard, версия: Rainfall 3.4.4 (стабильная), от октября 2022 года.\n\nРазработчик\nОткрытое ПО\nПолитика конфиденциальности</string>
+    <string name="cachePreferencesTitle">Очистка кеша</string>
+    <string name="cachePreferencesMessage">Вы действительно хотите очистить кеш приложения? Очистка перезагрузит дизайн для всех карт</string>
+
+    <string name="authorLink">https://vk.com/id_cs_sourse</string>
+    <string name="githubLink">https://github.com/Ilyandr/MCard-indicative</string>
+    <string name="policyLink">https://pages.flycricket.io/mcard/privacy.html</string>
+    <string name="successClearCacheApp">Кеш приложения успешно очищен</string>
+    <string name="exitAccountTitle">Выход</string>
+    <string name="exitAccountMessage">Вы точно хотите выйти из своего аккаунта?</string>
+    <string name="additionallyDescription">В грядущих обновлениях:\n\n- Реализация страницы поддержки.\n- Добавление банковских карт.\n- Бесконтактная оплата.\n- Выпуск карт в приложении.\n- Импорт имеющихся цифровых карт.\n- Доработка авто-добавления карт.\n\nДля материальной помощи проекту - нажмите на кнопку ниже. С благодарностью, разработчик MCard.</string>
+    <string name="paymentButtonTitle">Поддержать проект</string>
+    <string name="paymentDialogTitle">Платёж</string>
+    <string name="examplePaymentTitle">Например: 100</string>
+    <string name="subHeaderPaymentTitle">Введите любую сумму для пожертвования (от 1-го рубля).</string>
+    <string name="headerPaymentTitle">Сумма платежа</string>
+
+    <string name="mcardId" translatable="false">mcard.co/payment</string>
+    <string name="supportFragmentUnvaible">Данная функция находится на стадии альфа-тестирования, подробнее в разделе \"Дополнительно\"</string>
+    <string name="restoreTitle">Восстановление</string>
+    <string name="registerTitle">Регистрация</string>
+</resources>

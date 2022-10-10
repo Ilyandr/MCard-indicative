@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "This is an indicative model of the application, without api keys.",
+    "firebase_url": "This is an indicative model of the application, without api keys.",
+    "project_id": "This is an indicative model of the application, without api keys.",
+    "storage_bucket": "This is an indicative model of the application, without api keys."
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "This is an indicative model of the application, without api keys.",
+        "android_client_info": {
+          "package_name": "gcu.product.mcard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "This is an indicative model of the application, without api keys.",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "gcu.product.mcard",
+            "certificate_hash": "This is an indicative model of the application, without api keys."
+          }
+        },
+        {
+          "client_id": "This is an indicative model of the application, without api keys.",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "This is an indicative model of the application, without api keys."
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "This is an indicative model of the application, without api keys.",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

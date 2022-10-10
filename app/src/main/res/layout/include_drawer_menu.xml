@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.navigation.NavigationView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_view"
+    style="@style/BasicView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:fitsSystemWindows="true"
+    app:headerLayout="@layout/nav_header_general_app"
+    app:itemIconSize="28dp"
+    app:itemTextAppearance="@style/BasicTextDrawerStyle"
+    app:itemTextColor="@color/color_type_primary"
+    app:menu="@menu/activity_main_drawer">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="8dp">
+
+        <View
+            android:id="@+id/panelSeparatorTop"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@color/dialogShadowLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/exitButton"
+            style="@style/BasicTextDrawerStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/prism"
+            android:backgroundTint="@color/prism"
+            android:gravity="start|center"
+            android:text="@string/exitTitle"
+            app:layout_constraintStart_toStartOf="@+id/appCompatTextView2"
+            app:layout_constraintTop_toBottomOf="@+id/panelSeparatorTop" />
+
+        <View
+            android:id="@+id/panelSeparator"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@color/prism"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/exitButton" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/appCompatTextView2"
+            style="@style/BasicTextDrawerStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:drawablePadding="16sp"
+            android:gravity="center"
+            android:text="@string/additionalTitleDrawer"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/panelSeparator"
+            app:layout_constraintTop_toBottomOf="@+id/panelSeparator" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/modeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_mode_light"
+            app:layout_constraintBottom_toBottomOf="@+id/appCompatTextView2"
+            app:layout_constraintEnd_toEndOf="@+id/panelSeparator"
+            app:layout_constraintTop_toTopOf="@+id/appCompatTextView2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.navigation.NavigationView>

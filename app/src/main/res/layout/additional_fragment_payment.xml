@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:tools="http://schemas.android.com/tools">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="8dp">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/close_sheet_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:src="@drawable/button_close"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/infoSubscribeSubscribe"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/close_sheet_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/close_sheet_button" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/left_info_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="40dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/right_info_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="40dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/ship_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="20dp"
+        android:text="@string/infoUserSelectSubscribeData"
+        android:textColor="@color/colorSheetLabel"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/left_info_guide"
+        app:layout_constraintTop_toBottomOf="@id/close_sheet_button"
+        tools:ignore="RtlSymmetry" />
+
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/column_separator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="end"
+        app:constraint_referenced_ids="ship_to, total" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/infoBuyInAppSubscribe"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@id/right_info_guide"
+        app:layout_constraintStart_toEndOf="@id/column_separator"
+        app:layout_constraintTop_toTopOf="@id/ship_to" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/subcribeInfoTV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:lineSpacingExtra="5sp"
+        android:textColor="@color/colorSheetInfo"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@id/right_info_guide"
+        app:layout_constraintStart_toEndOf="@id/column_separator"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <View
+        android:id="@+id/ship_separator"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/colorSheetSeparator"
+        app:layout_constraintEnd_toStartOf="@id/right_info_guide"
+        app:layout_constraintStart_toStartOf="@id/left_info_guide"
+        app:layout_constraintTop_toBottomOf="@+id/subcribeInfoTV" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:paddingEnd="20dp"
+        android:text="@string/infoSubscribePrice"
+        android:textColor="@color/colorSheetLabel"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/left_info_guide"
+        app:layout_constraintTop_toBottomOf="@+id/ship_separator"
+        tools:ignore="RtlSymmetry" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@id/right_info_guide"
+        app:layout_constraintStart_toEndOf="@id/column_separator"
+        app:layout_constraintTop_toBottomOf="@+id/ship_separator" />
+
+    <View
+        android:id="@+id/price_separator"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/colorSheetSeparator"
+        app:layout_constraintEnd_toStartOf="@id/right_info_guide"
+        app:layout_constraintStart_toStartOf="@id/left_info_guide"
+        app:layout_constraintTop_toBottomOf="@+id/price" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/refund"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:lineSpacingExtra="8sp"
+        android:text="@string/additionalyIInfoBuySubscribe"
+        android:textColor="@color/colorSheetInfo"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@id/right_info_guide"
+        app:layout_constraintStart_toEndOf="@id/left_info_guide"
+        app:layout_constraintTop_toBottomOf="@+id/price_separator" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/button_middle_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/pay_with_google_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="50sp"
+        android:layout_marginRight="50sp"
+        android:backgroundTint="@color/black"
+        android:gravity="center"
+        android:layout_marginTop="15sp"
+        android:hint="@string/btnPayInfo2"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColorHint="@color/colorSheetSeparator"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/right_info_guide"
+        app:layout_constraintStart_toStartOf="@+id/left_info_guide"
+        app:layout_constraintTop_toBottomOf="@+id/refund" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/pay_with_cards"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/black"
+        android:gravity="center"
+        android:hint="@string/btnPayInfo3"
+        android:textColorHint="@color/colorSheetSeparator"
+        android:textSize="14sp"
+        android:scaleX="0"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginLeft="50sp"
+        android:layout_marginRight="50sp"
+        android:layout_marginBottom="5sp"
+        app:layout_constraintEnd_toStartOf="@+id/right_info_guide"
+        app:layout_constraintStart_toStartOf="@+id/left_info_guide"
+        app:layout_constraintTop_toBottomOf="@+id/pay_with_google_button" />
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

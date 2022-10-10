@@ -1,0 +1,108 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "6806626ed0decfaecf8ffd9732b8f161",
+    "entities": [
+      {
+        "tableName": "HISTORY_USE",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`timeAdd` TEXT NOT NULL, `usageCardId` TEXT NOT NULL, `shopName` TEXT NOT NULL, `shopAddress` TEXT NOT NULL, PRIMARY KEY(`timeAdd`))",
+        "fields": [
+          {
+            "fieldPath": "timeAdd",
+            "columnName": "timeAdd",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "usageCardId",
+            "columnName": "usageCardId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "shopName",
+            "columnName": "shopName",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "shopAddress",
+            "columnName": "shopAddress",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "timeAdd"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "CARD",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`number` TEXT, `name` TEXT, `barcode` TEXT, `color` INTEGER, `cardOwner` TEXT, `dateAddCard` INTEGER, `uniqueIdentifier` TEXT NOT NULL, PRIMARY KEY(`uniqueIdentifier`))",
+        "fields": [
+          {
+            "fieldPath": "number",
+            "columnName": "number",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "barcode",
+            "columnName": "barcode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "color",
+            "columnName": "color",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "cardOwner",
+            "columnName": "cardOwner",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "dateAddCard",
+            "columnName": "dateAddCard",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "uniqueIdentifier",
+            "columnName": "uniqueIdentifier",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "uniqueIdentifier"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '6806626ed0decfaecf8ffd9732b8f161')"
+    ]
+  }
+}

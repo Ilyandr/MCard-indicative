@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:id="@+id/first">
+        <item
+            android:id="@+id/btnSettings"
+            android:icon="@drawable/settings_icon"
+            android:title="@string/left_menu_settings" />
+
+        <item
+            android:id="@+id/btnPaymentAction"
+            android:icon="@drawable/ic_information"
+            android:title="@string/left_menu_subscribe" />
+
+        <item
+            android:id="@+id/btnSupport"
+            android:icon="@drawable/ic_support"
+            android:title="@string/left_menu_support" />
+    </group>
+</menu>
