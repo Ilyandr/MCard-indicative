@@ -7,6 +7,8 @@ Stack of technologies:
 - api: yookassa (payments), google (geolocation), yandex (metrica).
 - other: material design (android and ios), navigation graph, viewBinding.
 
+----
+Play market link: https://play.google.com/store/apps/details?id=gcu.product.mcard
 Android 5+.
 
 
